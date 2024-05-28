@@ -1,0 +1,6 @@
+img{
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+

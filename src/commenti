@@ -1,0 +1,90 @@
+--------------------------------------------------- ReadData.jsx
+
+MOLTO INTERESSANTE: UNA VOLTA FATTA LA FETCH "fetchData"
+LA RITORNA IN QUESTA NUOVA FUNZIONE "useData" con uno "useEffect",
+ESTRAE I DATI E SALVA LO STATO DI QUESTI DATI
+ESPORTA POI SOLO LA FUNZIONE "--- export default useData;"
+
+   const useData = () => {
+     const [data, setData] = useState([]);
+
+    useEffect(() => {
+      fetchData().then(setData);
+    }, []);
+
+     return data;
+  };
+
+PRATICAMENTE SEMBRA LO STATE DETERMINI LO STATO DELLA FUNZIONE E QUANDO PASSO UNA FUNZIOEN CON ALL'INTERNO UNO STATO
+PASSO TUTTO CIò CHE è CONTENUTO IN QUELLO STATO. LO NOTIAMO PERCHè setData VIENE ESTRATTO DALLA FETCH E POI INSERITO COME STATO.
+- QUESTA è L'UNICA COSA CHE FA LA FUNZIONE.
+
+
+
+--------------------------------------------------- UserLocation.jsx
+
+CON useEffect ESTRAE I DATI E DETERMINA setLocation CHE AGGIORNA LO STATO, NONCHè I DATI DA PASSARE.
+
+const useUserLocation = () => {
+    const [location, setLocation] = useState({ lat: null, lng: null });
+  
+    useEffect(() => {
+      navigator.geolocation.getCurrentPosition((position) => {
+        setLocation({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        });
+      });
+    }, []);
+  
+    return location;
+  };
+  
+  export default useUserLocation;
+
+  --------------------------------------------------- ShowCard.jsx + utils.jsx
+
+  QUI IMPORTO TUTTO, IN PARTICOLARE LE FUNZIONI CHE CI SERVONO (fetchData no perchè viene richiamata a sua volta in useData),
+  RICHIAMO ANCHE "calculateDistance" PER CALCOLARE LA DISTANZA DA UN PUNTO FISSO (LA MIA POSIZIONE) A I VARI LUOGHI.
+  RICHIAMO IN DUE COSTANTI | const userLocation = useUserLocation(); const cinemas = useData(); |
+  IMPACCHETTO I DATI COME SERVONO A "calculateDistance" FACENDO UN CICLO E RICHIAMANDOLA 
+  (ovviamente  userLocation.lat e  userLocation.lng sono costanti e sono la mia posizione).
+  RITORNO INFINE L'ARRAY CON TUTTI I DATI E LA DISTANZA DALLA MIA POSIZIONE A I VARI PUNTI.
+  CON ".sort((a, b) => a.distance - b.distance);" DICO DI RIORDINARE I DATI E METTERLI IN ORDINE IN BASE ALLA DISTANZA.
+
+  import React from "react";
+import useUserLocation from "./UserLocation";
+import useData from "./ReadData";
+import { calculateDistance } from "./utils";
+
+const ShowCard = () => {
+  const userLocation = useUserLocation();
+  const cinemas = useData();
+
+  const sortedCinemas = cinemas
+    .map((cinema) => {
+      const distance = calculateDistance(
+        userLocation.lat,
+        userLocation.lng,
+        cinema.coordinates.lat,
+        cinema.coordinates.lng
+      );
+      
+      return { ...cinema, distance };
+    })
+    .sort((a, b) => a.distance - b.distance);
+
+  const openGoogleMaps = (lat, lng) => {
+    const url = `https://www.google.it/maps/@${lat},${lng},15z?entry=ttu`;
+    window.open(url, "_blank");
+  };
+
+  CHIUSO IL PROCESSO SISTEMO QUESTO SCRIPT CHE GENERA I LINK DI MAPS E LO TRIGGERO PASSANDO COME VARIABILI QUESTE: 
+  cinema.coordinates.lat,
+  cinema.coordinates.lng;
+
+  <button onClick={() => openGoogleMaps(cinema.coordinates.lat, cinema.coordinates.lng) }>Visualizza su Google Maps</button>
+
+
+
+

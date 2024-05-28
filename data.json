@@ -1,0 +1,111 @@
+[
+      {
+        "name": "UCI Cinemas Showville Bari",
+        "city": "Bari",
+        "address": "Via Mario Giannini, 9, 70125 Bari BA",
+        "coordinates": {
+          "lat": 41.09093460469303,
+          "lng": 16.887603328836455
+        }
+      },
+      {
+        "name": "Cineteatro Coviello",
+        "city": "Bitonto",
+        "address": "Via della Repubblica Italiana, 45, 70032 Bitonto BA",
+        "coordinates": {
+          "lat": 41.1173509346325,
+          "lng": 16.6916227302529
+        }
+      },
+      {
+        "name": "Cineteatro Sala Farina",
+        "city": "Foggia",
+        "address": "Via Campanile, 10, 71121 Foggia FG",
+        "coordinates": {
+          "lat": 41.46461721621727,
+          "lng": 15.544610529876785
+        }
+    },
+    {
+        "name": "Uci Cinema",
+        "city": "Molfetta",
+        "address": "Uci Cinema, Molfetta",
+        "coordinates": {
+            "lat": 41.217233295474934,
+            "lng": 16.54693640426078
+        }
+    },
+    {
+        "name": "Nome del Cinema",
+        "city": "Montesilvano",
+        "address": "Viale Alberto D'Andrea, Montesilvano",
+        "coordinates": {
+            "lat": 42.5209973,
+            "lng": 14.1520203
+        }
+    },
+    {
+        "name": "Cinema's name",
+        "city": "Spoltore",
+        "address": "via Federico Fellini s.n., Spoltore",
+        "coordinates": {
+            "lat": 42.4540959,
+            "lng": 14.1808568
+        }
+    },
+    {
+        "name": "Cinema + nome",
+        "city": "Roma",
+        "address": "Piazza Cavour, 22, Roma",
+        "coordinates": {
+            "lat": 41.9060673,
+            "lng": 12.4697568
+        }
+    },
+    {
+        "name": "cinema test",
+        "city": "Roma",
+        "address": "Via Mattia Battistini, 191, Roma",
+        "coordinates": {
+            "lat": 41.9127529,
+            "lng": 12.4181476
+        }
+    },
+    {
+        "name": "Nome del Cinema",
+        "city": "Roma",
+        "address": "Viale Adriatico, 15/21, Roma",
+        "coordinates": {
+            "lat": 41.9385172,
+            "lng": 12.5350268
+        }
+    },
+    {
+        "name": "The Space Cinema - Rozzano",
+        "city": "Rozzano",
+        "address": "Via Sandro Pertini, 20, 20089 Rozzano MI",
+        "coordinates": {
+          "lat": 45.391611325122284,
+          "lng": 9.177737518892116
+        }
+      },
+      {
+        "name": "UCI Cinemas Milanofiori",
+        "city": "Assago",
+        "address": "V.le Milanofiori, 20090 Assago MI",
+        "coordinates": {
+          "lat": 45.409676186227955,
+          "lng": 9.150786667253254
+        }
+      },
+      {
+        "name": "The Space Cinema Torino Parco Dora",
+        "city": "Torino",
+        "address": "Salita Michelangelo Garove, 10144 Torino TO",
+        "coordinates": {
+          "lat": 45.0904279734794,
+          "lng": 7.66913597889288
+        }
+      }
+]
+
