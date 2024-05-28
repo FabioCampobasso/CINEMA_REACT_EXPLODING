@@ -9,12 +9,23 @@ const ShowElements = () => {
   const { location, locationError, requestLocation } = useUserLocation();
   const [searchCity, setSearchCity] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
+ 
+  const selectedCoordinates = selectedCity
+    ? {
+        lat: selectedCity.coordinates.latitude,
+        lng: selectedCity.coordinates.longitude,
+      }
+    : location;
 
-  useEffect(() => {
-    if (!location) {
-      requestLocation();
-    }
-  }, [location, requestLocation]);
+  const { sortedCinemas, minDistance, maxDistance } =
+    useSortedCinemas(selectedCoordinates);
+  const [selectedDistance, setSelectedDistance] = useState(maxDistance);  
+
+  // useEffect(() => {
+  //   if (!location) {
+  //     requestLocation();
+  //   }
+  // }, [location, requestLocation]);
 
   const handleCityChange = (event) => {
     const cityName = event.target.value;
@@ -31,16 +42,6 @@ const ShowElements = () => {
     }
   };
 
-  const selectedCoordinates = selectedCity
-    ? {
-        lat: selectedCity.coordinates.latitude,
-        lng: selectedCity.coordinates.longitude,
-      }
-    : location;
-
-  const { sortedCinemas, minDistance, maxDistance } =
-    useSortedCinemas(selectedCoordinates);
-  const [selectedDistance, setSelectedDistance] = useState(maxDistance);
 
   const openGoogleMaps = (lat, lng) => {
     const url = `https://www.google.it/maps/@${lat},${lng},15z?entry=ttu`;
@@ -58,10 +59,11 @@ const ShowElements = () => {
   return (
     <div>
       {locationError ? (
-        <h4>Cerca la tua città:</h4>
+         <button onClick={requestLocation}></button>
       ) : (
         <h4>Cinema vicino a te:</h4>
       )}
+     
       <div className="d-flex align-items-center mb-2">
         <div className="mx-3">
           <DistanceFilter

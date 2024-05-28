@@ -1,6 +1,6 @@
 import React from "react";
 
-const CityFilter = ({ searchCity, onCityChange, minDistance, maxDistance}) => {
+const CityFilter = ({ searchCity, onCityChange}) => {
   return (
     <label>
       Filtra per città:
