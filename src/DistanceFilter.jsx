@@ -4,7 +4,7 @@ const DistanceFilter = ({ value, onChange, minDistance, maxDistance }) => {
   return (
     <article className="d-flex align-items-center">
       <div>
-      {value.toFixed(2)} km da te:
+      <p className="mb-1">{value.toFixed(2)} km da te:</p>
         <input
           type="range"
           min={minDistance + 0.5}
@@ -12,7 +12,7 @@ const DistanceFilter = ({ value, onChange, minDistance, maxDistance }) => {
           value={value}
           onChange={onChange}
           step="1"
-          className="form-range"
+          className="form-range "
         />       
       </div>
     </article>

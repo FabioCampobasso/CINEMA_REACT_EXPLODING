@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps with Geocoding</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <style>
+        /* Imposta lo stile per la mappa */
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLYO15z9075rfG8ExqZivFy7pq1tx9hk&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            // Crea la mappa centrata su una posizione di default
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: {lat: 45.4642, lng: 9.19}  // Milano, Italia
+            });
+
+            // Indirizzi da geocodificare
+            var addresses = [
+                "Via Sandro Pertini, 20, 20089 Rozzano MI",
+                "V.le Milanofiori, 20090 Assago MI"
+            ];
+
+            // Crea un geocodificatore
+            var geocoder = new google.maps.Geocoder();
+
+            // Funzione per aggiungere un marker
+            function addMarker(location, address) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: location
+                });
+                var infowindow = new google.maps.InfoWindow({
+                    content: address
+                });
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+            }
+
+            // Geocodifica ogni indirizzo e aggiungi un marker
+            addresses.forEach(function(address) {
+                geocoder.geocode({'address': address}, function(results, status) {
+                    if (status === 'OK') {
+                        addMarker(results[0].geometry.location, address);
+                        // Centra la mappa sulla prima posizione geocodificata
+                        if (addresses.indexOf(address) === 0) {
+                            map.setCenter(results[0].geometry.location);
+                        }
+                    } else {
+                        alert('Geocode was not successful for the following reason: ' + status);
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useSortedCinemas } from "./ShowCardLogic";
-import CityFilter from "./CityFilter";
-import DistanceFilter from "./DistanceFilter";
+import ShowFilter from "./ShowFilter";
+import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
 import citiesData from "../cities_coords.json";
 
+
 const ShowElements = () => {
-  const { location, locationError, requestLocation } = useUserLocation();
+  const { location, requestLocation } = useUserLocation();
   const [searchCity, setSearchCity] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
- 
+
   const selectedCoordinates = selectedCity
     ? {
         lat: selectedCity.coordinates.latitude,
@@ -17,9 +18,8 @@ const ShowElements = () => {
       }
     : location;
 
-  const { sortedCinemas, minDistance, maxDistance } =
-    useSortedCinemas(selectedCoordinates);
-  const [selectedDistance, setSelectedDistance] = useState(maxDistance);  
+  const { sortedCinemas, minDistance, maxDistance } = useSortedCinemas(selectedCoordinates);
+  const [selectedDistance, setSelectedDistance] = useState(maxDistance);
 
   const handleCityChange = (event) => {
     const cityName = event.target.value;
@@ -45,50 +45,22 @@ const ShowElements = () => {
   );
 
   return (
-    <div>
-      <header className="d-flex align-items-center mb-2">
-     {location ? (
-       <></>
-      ) : (
-        <button className="btn btn-primary mx-3" onClick={requestLocation}>
-          Geolocalizzami
-        </button>
-      )}
-      <div className="d-flex align-items-center mb-2">
-        {selectedCoordinates && selectedCoordinates.lat && selectedCoordinates.lng && (
-          <div className="mx-3">
-            <DistanceFilter
-              value={selectedDistance}
-              onChange={handleDistanceChange}
-              minDistance={minDistance}
-              maxDistance={300} // qui cambio la distanza del range
-            />
-          </div>
-        )}
-        <div className="mx-3">
-          <CityFilter searchCity={searchCity} onCityChange={handleCityChange} />
-        </div>
-      </div>
-      </header>
-      <h2></h2>
+     
+    <div className="container mx-auto p-4">
+      <img src="https://placehold.co/400x400" alt="not_found" className="mb-3 w-60 h-60 mx-auto" style={{ objectFit: 'cover', marginBottom: '20px' }} />
 
-      {filteredCinemas.map((cinema, index) => (
-        <div key={index} className="card mb-3" style={{ maxWidth: "540px" }}>
-          <div className="row g-0 col-md-8">
-          <div className="card-body">
-  <h2 className="card-title">
-    {cinema.name} - {cinema.city}
-  </h2>
-  <p className="card-text">
-    {cinema.address} - {cinema.distance.toFixed(2)} km
-  </p>
-</div>
-  
-
-            </div>
-          
-        </div>
-      ))}
+      <ShowFilter
+        location={location}
+        requestLocation={requestLocation}
+        searchCity={searchCity}
+        handleCityChange={handleCityChange}
+        selectedCoordinates={selectedCoordinates}
+        selectedDistance={selectedDistance}
+        handleDistanceChange={handleDistanceChange}
+        minDistance={minDistance}
+        maxDistance={maxDistance}
+      />
+      <ShowCard filteredCinemas={filteredCinemas} selectedCoordinates={selectedCoordinates} />
     </div>
   );
 };

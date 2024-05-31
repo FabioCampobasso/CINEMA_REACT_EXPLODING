@@ -4,11 +4,11 @@ const CityFilter = ({ searchCity, onCityChange}) => {
   return (
     <label>
       Filtra per città:
-      <input
+      <input 
         type="text"
         value={searchCity}
         onChange={onCityChange}
-        className="form-control"
+        className="form-control text-sm"
         placeholder="Inserisci il nome della città"
       />
     </label>
