@@ -1,13 +1,7 @@
 import React, { useEffect } from 'react';
 
-const ShowCard = ({ filteredCinemas, selectedCoordinates, onAddressesExtracted }) => {
-  useEffect(() => {
-    if (filteredCinemas.length > 0) {
-      const addresses = filteredCinemas.map(cinema => cinema.address);
-      onAddressesExtracted(addresses);
-    }
-  }, [filteredCinemas, onAddressesExtracted]);
-
+const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
+ 
   return (
     <div>
       {!selectedCoordinates || !selectedCoordinates.lat || !selectedCoordinates.lng ? (
