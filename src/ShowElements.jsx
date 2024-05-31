@@ -21,12 +21,6 @@ const ShowElements = () => {
     useSortedCinemas(selectedCoordinates);
   const [selectedDistance, setSelectedDistance] = useState(maxDistance);  
 
-  // useEffect(() => {
-  //   if (!location) {
-  //     requestLocation();
-  //   }
-  // }, [location, requestLocation]);
-
   const handleCityChange = (event) => {
     const cityName = event.target.value;
     setSearchCity(cityName);
@@ -42,12 +36,6 @@ const ShowElements = () => {
     }
   };
 
-
-  const openGoogleMaps = (lat, lng) => {
-    const url = `https://www.google.it/maps/@${lat},${lng},15z?entry=ttu`;
-    window.open(url, "_blank");
-  };
-
   const handleDistanceChange = (e) => {
     setSelectedDistance(parseFloat(e.target.value));
   };
@@ -58,51 +46,47 @@ const ShowElements = () => {
 
   return (
     <div>
-      {locationError ? (
-         <button onClick={requestLocation}></button>
+      <header className="d-flex align-items-center mb-2">
+     {location ? (
+       <></>
       ) : (
-        <h4>Cinema vicino a te:</h4>
+        <button className="btn btn-primary mx-3" onClick={requestLocation}>
+          Geolocalizzami
+        </button>
       )}
-     
       <div className="d-flex align-items-center mb-2">
-        <div className="mx-3">
-          <DistanceFilter
-            value={selectedDistance}
-            onChange={handleDistanceChange}
-            minDistance={minDistance}
-            maxDistance={maxDistance}
-          />
-        </div>
+        {selectedCoordinates && selectedCoordinates.lat && selectedCoordinates.lng && (
+          <div className="mx-3">
+            <DistanceFilter
+              value={selectedDistance}
+              onChange={handleDistanceChange}
+              minDistance={minDistance}
+              maxDistance={300} // qui cambio la distanza del range
+            />
+          </div>
+        )}
         <div className="mx-3">
           <CityFilter searchCity={searchCity} onCityChange={handleCityChange} />
         </div>
       </div>
+      </header>
+      <h2></h2>
 
       {filteredCinemas.map((cinema, index) => (
         <div key={index} className="card mb-3" style={{ maxWidth: "540px" }}>
-          <div className="row g-0">
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">
-                  {cinema.name} - {cinema.city}
-                </h5>
-                <p className="card-text">
-                  {cinema.address} - {cinema.distance.toFixed(2)} km
-                </p>
-                <button
-                  className="btn btn-primary"
-                  onClick={() =>
-                    openGoogleMaps(
-                      cinema.coordinates.lat,
-                      cinema.coordinates.lng
-                    )
-                  }
-                >
-                  ➤
-                </button>
-              </div>
+          <div className="row g-0 col-md-8">
+          <div className="card-body">
+  <h2 className="card-title">
+    {cinema.name} - {cinema.city}
+  </h2>
+  <p className="card-text">
+    {cinema.address} - {cinema.distance.toFixed(2)} km
+  </p>
+</div>
+  
+
             </div>
-          </div>
+          
         </div>
       ))}
     </div>

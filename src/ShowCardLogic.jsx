@@ -24,7 +24,7 @@ const useSortedCinemas = (selectedCoordinates = null) => {
     .sort((a, b) => a.distance - b.distance);
 
   const minDistance = sortedCinemas.length ? sortedCinemas[0].distance : 0;
-  const maxDistance = sortedCinemas.length ? sortedCinemas[sortedCinemas.length - 1].distance : 50;
+  const maxDistance = sortedCinemas.length ? sortedCinemas[sortedCinemas.length - 1].distance : 30;
 
   return { sortedCinemas, minDistance, maxDistance };
 };

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const fetchData = async () => {
-  const response = await fetch("http://localhost:5173/data.json");
+  const response = await fetch("http://localhost:5173//data.json");
   const data = await response.json();
   return data;
 };
