@@ -5,6 +5,7 @@ import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
 import citiesData from "../cities_coords.json";
 
+// funzioni del meccanismo di filtraggio 
 
 const ShowElements = () => {
   const { location, requestLocation } = useUserLocation();
@@ -45,23 +46,33 @@ const ShowElements = () => {
   );
 
   return (
-     
-    <div className="container mx-auto p-4">
-      <img src="https://placehold.co/400x400" alt="not_found" className="mb-3 w-60 h-60 mx-auto" style={{ objectFit: 'cover', marginBottom: '20px' }} />
-
-      <ShowFilter
-        location={location}
-        requestLocation={requestLocation}
-        searchCity={searchCity}
-        handleCityChange={handleCityChange}
-        selectedCoordinates={selectedCoordinates}
-        selectedDistance={selectedDistance}
-        handleDistanceChange={handleDistanceChange}
-        minDistance={minDistance}
-        maxDistance={maxDistance}
-      />
-      <ShowCard filteredCinemas={filteredCinemas} selectedCoordinates={selectedCoordinates} />
-    </div>
+    <main className="w-full h-screen">
+      <div className="flex flex-col md:flex-row h-full">
+        <header className="w-full md:w-3/12 bg-slate-600 p-4">
+          <img
+            src="https://placehold.co/400x400"
+            alt="not_found"
+            className="w-full h-auto"
+            style={{ objectFit: "cover" }}
+          />
+          <button className="btn btn-warning w-full text-center mt-2">Trailer</button>
+        </header>
+        <div className="w-full bg-white flex flex-col">
+          <ShowFilter
+            location={location}
+            requestLocation={requestLocation}
+            searchCity={searchCity}
+            handleCityChange={handleCityChange}
+            selectedCoordinates={selectedCoordinates}
+            selectedDistance={selectedDistance}
+            handleDistanceChange={handleDistanceChange}
+            minDistance={minDistance}
+            maxDistance={maxDistance}
+          />
+          <ShowCard filteredCinemas={filteredCinemas} selectedCoordinates={selectedCoordinates} />
+        </div>
+      </div>
+    </main>
   );
 };
 

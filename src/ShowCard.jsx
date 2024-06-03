@@ -13,7 +13,7 @@ const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
       {filteredCinemas.map((cinema, index) => (
         <div
           key={index}
-          className="card mb-4 max-w-lg mx-auto bg-white shadow-md rounded-lg overflow-hidden text-sm"
+          className="card m-3 bg-white shadow-md rounded-lg overflow-hidden text-sm"
         >
           <div className="flex">
             <div className="card-body p-4">
