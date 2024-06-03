@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import not_found from "../img/not_found.png";
 
 const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
  
@@ -6,7 +7,7 @@ const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
     <div>
       {!selectedCoordinates || !selectedCoordinates.lat || !selectedCoordinates.lng ? (
         <div className="d-flex flex-column align-items-center mt-0">
-          <img src="../img/not_found.png" alt="not_found" className="mb-3" />
+          <img src={not_found} alt="not_found" className="mb-3" />
           <h2 className="text-center font-semibold">Non ho trovato cinema</h2>
         </div>
       ) : null}
