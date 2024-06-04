@@ -1,13 +1,20 @@
 [
-      {
-        "name": "UCI Cinemas Showville Bari",
-        "city": "Bari",
-        "address": "Via Mario Giannini, 9, 70125 Bari BA",
-        "coordinates": {
-          "lat": 41.09093460469303,
-          "lng": 16.887603328836455
-        }
-      },
+  {
+    "name": "UCI Cinemas Showville Bari",
+    "city": "Bari",
+    "address": "Via Mario Giannini, 9, 70125 Bari BA",
+    "coordinates": {
+      "lat": 41.09093460469303,
+      "lng": 16.887603328836455
+    },
+    "showtime": {
+      "data": [
+        "2024-06-04",
+        "2024-06-05"
+      ]
+    }
+  },
+  
       {
         "name": "Cineteatro Coviello",
         "city": "Bitonto",
@@ -15,6 +22,12 @@
         "coordinates": {
           "lat": 41.1173509346325,
           "lng": 16.6916227302529
+        },
+        "showtime": {
+          "data": [
+            "2024-06-04",
+            "2024-06-05"
+          ]
         }
       },
       {
@@ -24,8 +37,14 @@
         "coordinates": {
           "lat": 41.46461721621727,
           "lng": 15.544610529876785
+        },
+        "showtime": {
+          "data": [
+            "2024-06-04",
+            "2024-06-05"
+          ]
         }
-    },
+      },
     {
         "name": "Uci Cinema",
         "city": "Molfetta",
@@ -33,8 +52,14 @@
         "coordinates": {
             "lat": 41.217233295474934,
             "lng": 16.54693640426078
-        }
-    },
+          },
+          "showtime": {
+            "data": [
+              "2024-06-04",
+              "2024-06-05"
+            ]
+          }
+        },
     {
         "name": "Nome del Cinema",
         "city": "Montesilvano",
@@ -42,8 +67,14 @@
         "coordinates": {
             "lat": 42.5209973,
             "lng": 14.1520203
-        }
-    },
+          },
+          "showtime": {
+            "data": [
+              "2024-06-04",
+              "2024-06-05"
+            ]
+          }
+        },
     {
         "name": "Cinema's name",
         "city": "Spoltore",
@@ -51,8 +82,14 @@
         "coordinates": {
             "lat": 42.4540959,
             "lng": 14.1808568
-        }
-    },
+          },
+          "showtime": {
+            "data": [
+              "2024-06-04",
+              "2024-06-05"
+            ]
+          }
+        },
     {
         "name": "Cinema + nome",
         "city": "Roma",
@@ -60,8 +97,14 @@
         "coordinates": {
             "lat": 41.9060673,
             "lng": 12.4697568
-        }
-    },
+          },
+          "showtime": {
+            "data": [
+              "2024-06-09",
+              "2024-06-01"
+            ]
+          }
+        },
     {
         "name": "cinema test",
         "city": "Roma",
@@ -69,8 +112,14 @@
         "coordinates": {
             "lat": 41.9127529,
             "lng": 12.4181476
-        }
-    },
+          },
+          "showtime": {
+            "data": [
+              "2024-06-04",
+              "2024-06-05"
+            ]
+          }
+        },
     {
         "name": "Nome del Cinema",
         "city": "Roma",
@@ -78,8 +127,14 @@
         "coordinates": {
             "lat": 41.9385172,
             "lng": 12.5350268
-        }
-    },
+          },
+          "showtime": {
+            "data": [
+              "2024-06-04",
+              "2024-06-05"
+            ]
+          }
+        },
     {
         "name": "The Space Cinema - Rozzano",
         "city": "Rozzano",
@@ -87,6 +142,12 @@
         "coordinates": {
           "lat": 45.391611325122284,
           "lng": 9.177737518892116
+        },
+        "showtime": {
+          "data": [
+            "2024-06-04",
+            "2024-06-05"
+          ]
         }
       },
       {
@@ -96,6 +157,12 @@
         "coordinates": {
           "lat": 45.409676186227955,
           "lng": 9.150786667253254
+        },
+        "showtime": {
+          "data": [
+            "2024-06-04",
+            "2024-06-05"
+          ]
         }
       },
       {
@@ -105,6 +172,12 @@
         "coordinates": {
           "lat": 45.0904279734794,
           "lng": 7.66913597889288
+        },
+        "showtime": {
+          "data": [
+            "2024-06-04",
+            "2024-06-05"
+          ]
         }
       }
 ]

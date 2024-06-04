@@ -22,7 +22,7 @@ const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
                 {cinema.name} - {cinema.city}
               </h2>
               <p className="card-text text-gray-700">
-                {cinema.address} - {cinema.distance.toFixed(2)} km
+                {cinema.address} - {cinema.distance.toFixed(2)} km - {cinema.showtime.data}
               </p>
             </div>
           </div>

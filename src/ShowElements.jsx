@@ -4,13 +4,15 @@ import ShowFilter from "./ShowFilter";
 import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
 import citiesData from "../cities_coords.json";
-
-// funzioni del meccanismo di filtraggio 
+import { format } from 'date-fns';
 
 const ShowElements = () => {
+  const currentDate = new Date();
+const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
   const { location, requestLocation } = useUserLocation();
   const [searchCity, setSearchCity] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(CurrentFormattedDate); 
 
   const selectedCoordinates = selectedCity
     ? {
@@ -19,7 +21,9 @@ const ShowElements = () => {
       }
     : location;
 
-  const { sortedCinemas, minDistance, maxDistance } = useSortedCinemas(selectedCoordinates);
+  const { sortedCinemas, minDistance, maxDistance } = useSortedCinemas(
+    selectedCoordinates
+  );
   const [selectedDistance, setSelectedDistance] = useState(maxDistance);
 
   const handleCityChange = (event) => {
@@ -41,8 +45,18 @@ const ShowElements = () => {
     setSelectedDistance(parseFloat(e.target.value));
   };
 
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
+
   const filteredCinemas = sortedCinemas.filter(
-    (cinema) => cinema.distance <= selectedDistance
+    (cinema) =>
+      cinema.distance <= selectedDistance &&
+      cinema.showtime.data.some((showtimeDate) => {
+        const formattedShowtimeDate = new Date(showtimeDate).getTime();
+        const formattedSelectedDate = new Date(selectedDate).getTime();
+        return formattedShowtimeDate === formattedSelectedDate;
+      })
   );
 
   return (
@@ -55,7 +69,9 @@ const ShowElements = () => {
             className="w-full h-auto"
             style={{ objectFit: "cover" }}
           />
-          <button className="btn btn-warning w-full text-center mt-2">Trailer</button>
+          <button className="btn btn-warning w-full text-center mt-2">
+            Trailer
+          </button>
         </header>
         <div className="w-full bg-white flex flex-col">
           <ShowFilter
@@ -68,6 +84,8 @@ const ShowElements = () => {
             handleDistanceChange={handleDistanceChange}
             minDistance={minDistance}
             maxDistance={maxDistance}
+            selectedDate={selectedDate}
+            handleDateChange={handleDateChange} // Pass handleDateChange prop
           />
           <ShowCard filteredCinemas={filteredCinemas} selectedCoordinates={selectedCoordinates} />
         </div>
