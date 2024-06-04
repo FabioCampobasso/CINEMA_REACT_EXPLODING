@@ -2,8 +2,8 @@ import React from "react";
 
 const DistanceFilter = ({ value, onChange, minDistance, maxDistance }) => {
   return (
-    <article className="d-flex align-items-center">
-      <div>
+    <article>
+      
       <p className="mb-1">{value.toFixed(2)} km da te:</p>
         <input
           type="range"
@@ -12,9 +12,9 @@ const DistanceFilter = ({ value, onChange, minDistance, maxDistance }) => {
           value={value}
           onChange={onChange}
           step="1"
-          className="form-range "
+          className="text-sm form-range mr-2"
         />       
-      </div>
+    
     </article>
   );
 };

@@ -2,10 +2,14 @@ import React, { useEffect } from 'react';
 import not_found from "../img/not_found.png";
 
 const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
+
+  const isEmpty = (arr) => {
+    return arr.length === 0;
+  };
  
   return (
     <div>
-      {!selectedCoordinates || !selectedCoordinates.lat || !selectedCoordinates.lng ? (
+      {isEmpty(filteredCinemas) ? ( 
         <div className="d-flex flex-column align-items-center mt-0">
           <img src={not_found} alt="not_found" className="mb-3" />
           <h2 className="text-center font-semibold">Non ho trovato cinema</h2>
@@ -22,7 +26,7 @@ const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
                 {cinema.name} - {cinema.city}
               </h2>
               <p className="card-text text-gray-700">
-                {cinema.address} - {cinema.distance.toFixed(2)} km - {cinema.showtime.data}
+                {cinema.address} - {cinema.distance.toFixed(2)} km 
               </p>
             </div>
           </div>

@@ -62,17 +62,23 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
   return (
     <main className="w-full h-screen">
       <div className="flex flex-col md:flex-row h-full">
-        <header className="w-full md:w-3/12 bg-slate-600 p-4">
-          <img
-            src="https://placehold.co/400x400"
-            alt="not_found"
-            className="w-full h-auto"
-            style={{ objectFit: "cover" }}
-          />
-          <button className="btn btn-warning w-full text-center mt-2">
-            Trailer
-          </button>
-        </header>
+      <header className="w-full md:w-3/12 bg-slate-600 p-4">
+  <div className="row">
+    <div className="col-2"></div> {/* 3 colonne vuote */}
+    <div className="col-8">
+      <img
+        src="https://placehold.co/400x400"
+        alt="not_found"
+        className="w-full h-auto"
+        style={{ objectFit: "cover" }}
+      />
+    </div>
+    <div className="col-2"></div> {/* 3 colonne vuote */}
+  </div>
+
+</header>
+
+
         <div className="w-full bg-white flex flex-col">
           <ShowFilter
             location={location}
@@ -85,9 +91,11 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
             minDistance={minDistance}
             maxDistance={maxDistance}
             selectedDate={selectedDate}
-            handleDateChange={handleDateChange} // Pass handleDateChange prop
+            handleDateChange={handleDateChange}
+            CurrentFormattedDate={CurrentFormattedDate} // Pass handleDateChange prop
           />
           <ShowCard filteredCinemas={filteredCinemas} selectedCoordinates={selectedCoordinates} />
+          <footer className="bg-slate-600 text-slate-50">termini e condizioni</footer>
         </div>
       </div>
     </main>
