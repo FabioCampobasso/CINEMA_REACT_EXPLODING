@@ -1,184 +1,3167 @@
 [
-  {
-    "name": "UCI Cinemas Showville Bari",
-    "city": "Bari",
-    "address": "Via Mario Giannini, 9, 70125 Bari BA",
-    "coordinates": {
-      "lat": 41.09093460469303,
-      "lng": 16.887603328836455
+    {
+        "name": "Andromeda",
+        "address": "Via Mattia Battistini, 191 Roma",
+        "link": "http://www.andromedacinemas.it/",
+        "coordinates": {
+            "lat": 41.9129339,
+            "lng": 12.4182469
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
     },
-    "showtime": {
-      "data": [
-        "2024-06-04",
-        "2024-06-05"
-      ]
+    {
+        "name": "Barberini",
+        "address": "Piazza Barberini, 24-25-26 Roma",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 41.9035971,
+            "lng": 12.4890519
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cineland",
+        "address": "Via dei Romagnoli, 515 Ostia Lido Roma",
+        "link": "http://www.cineland.it/cineland/",
+        "coordinates": {
+            "lat": 41.74632460000001,
+            "lng": 12.2868956
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Eden",
+        "address": "Piazza Cola di Rienzo, 74/76 Roma",
+        "link": "https://www.cinemaedenroma.it/",
+        "coordinates": {
+            "lat": 41.90856549999999,
+            "lng": 12.4686016
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Eurcine",
+        "address": "Via Liszt, 32 Roma",
+        "link": "https://www.circuitocinema.com/cinema/cinema-eurcine-roma/",
+        "coordinates": {
+            "lat": 41.8338821,
+            "lng": 12.4685779
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Giulio Cesare",
+        "address": "Viale Giulio Cesare, 229 Roma",
+        "link": "https://www.circuitocinema.com/cinema/cinema-giulio-cesare-roma/",
+        "coordinates": {
+            "lat": 41.9086229,
+            "lng": 12.4560787
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Lux",
+        "address": "Via Massaciuccoli, 31 Roma",
+        "link": "https://www.cinemadiroma.it/",
+        "coordinates": {
+            "lat": 41.9264146,
+            "lng": 12.5147283
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Odeon Multiscreen",
+        "address": "Piazza S. Jacini, 22 Roma",
+        "link": "https://www.cinemadiroma.it/",
+        "coordinates": {
+            "lat": 41.9499178,
+            "lng": 12.4655975
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Savoy",
+        "address": "Via Bergamo, 25 Roma",
+        "link": "http://www.mycityplex.it/savoy/",
+        "coordinates": {
+            "lat": 41.91130380000001,
+            "lng": 12.4995816
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Moderno",
+        "address": "Piazza della Repubblica, 44 Roma",
+        "link": "https://www.thespacecinema.it/al-cinema/roma-moderno",
+        "coordinates": {
+            "lat": 41.90205330000001,
+            "lng": 12.4962989
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Parco de' Medici",
+        "address": "Viale Salvatore Rebecchini, 3-5 Roma",
+        "link": "https://www.thespacecinema.it/al-cinema/roma-parco-de-medici",
+        "coordinates": {
+            "lat": 41.8158296,
+            "lng": 12.4114287
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Trianon",
+        "address": "Via Muzio Scevola, 99 Roma",
+        "link": "http://www.mycityplex.it/trianon/index.php",
+        "coordinates": {
+            "lat": 41.8750069,
+            "lng": 12.5259971
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Porta di Roma",
+        "address": "Via delle Vigne Nuove Roma",
+        "link": "https://www.ucicinemas.it/cinema/lazio/roma/uci-cinemas-porta-di-roma-roma/",
+        "coordinates": {
+            "lat": 41.9713931,
+            "lng": 12.5405887
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Roma Est",
+        "address": "Via Collatina, 858 Roma",
+        "link": "https://www.ucicinemas.it/cinema/lazio/roma/uci-cinemas-romaest-roma/",
+        "coordinates": {
+            "lat": 41.9158857,
+            "lng": 12.661989
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Astoria",
+        "address": "Via G. Matteotti, 8 Anzio",
+        "link": "http://www.cinemadianzio.it/",
+        "coordinates": {
+            "lat": 41.4484516,
+            "lng": 12.6280594
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "CineFeronia",
+        "address": "Via Milano 19 - Centro Commerciale Feronia Fiano Romano",
+        "link": "http://www.cineferonia.it/",
+        "coordinates": {
+            "lat": 42.1411162,
+            "lng": 12.600274
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Parco Leonardo",
+        "address": "Via Gian Lorenzo Bernini Fiumicino",
+        "link": "https://www.ucicinemas.it/cinema/lazio/roma/uci-cinemas-parco-leonardo-roma/",
+        "coordinates": {
+            "lat": 41.7984123,
+            "lng": 12.2953701
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Politeama",
+        "address": "L.go Augusto Panizza,5 Frascati",
+        "link": "https://politeama.it/",
+        "coordinates": {
+            "lat": 41.8078989,
+            "lng": 12.677587
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cynthianum",
+        "address": "Viale Mazzini, 9 Genzano di Roma",
+        "link": "http://www.cinemagenzano.it/",
+        "coordinates": {
+            "lat": 41.7112776,
+            "lng": 12.6899187
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Guidonia",
+        "address": "Via Antonio De Curtis snc Guidonia Montecelio",
+        "link": "https://www.thespacecinema.it/al-cinema/guidonia",
+        "coordinates": {
+            "lat": 41.9580256,
+            "lng": 12.709014
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Ambra Multiplex",
+        "address": "Via Filippo Turati 5 Velletri",
+        "link": "https://www.ambracinema.com/",
+        "coordinates": {
+            "lat": 41.6893722,
+            "lng": 12.7891424
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movieplex",
+        "address": "Via Leonardo da Vinci, 7 L'Aquila",
+        "link": "http://www.movieplex.it/",
+        "coordinates": {
+            "lat": 42.3664137,
+            "lng": 13.3727476
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multiplex Astra",
+        "address": "Via Cavour Avezzano",
+        "link": "http://www.multicinema.it/",
+        "coordinates": {
+            "lat": 42.001611,
+            "lng": 13.4326033
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Megal\u00f2",
+        "address": "Via Tirino, 5b Chieti",
+        "link": "https://www.ucicinemas.it/cinema/abruzzo/chieti/uci-cinemas-megalo/",
+        "coordinates": {
+            "lat": 42.34354980000001,
+            "lng": 14.1288589
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "CiakCity Garden",
+        "address": "Via Largo Piagnatari,9 Guardiagrele",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 42.19419,
+            "lng": 14.2197172
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Auditorium Zambra",
+        "address": "via Don Bosco, 2 Ortona",
+        "link": "https://m.facebook.com/cinemauditoriumzambra/",
+        "coordinates": {
+            "lat": 42.3489149,
+            "lng": 14.4059314
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Ciakcity Polycenter",
+        "address": "Contrada Santa Calcagna, 30 Rocca San Giovanni",
+        "link": "http://www.ciakcity.it/",
+        "coordinates": {
+            "lat": 42.2663512,
+            "lng": 14.4338712
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Smeraldo",
+        "address": "Via Maestri del Lavoro Teramo",
+        "link": "http://www.smeraldocinema.it/",
+        "coordinates": {
+            "lat": 42.6612649,
+            "lng": 13.7107732
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Lumiere",
+        "address": "Viale Laboccetta Reggio Calabria",
+        "link": "http://www.multisalalumiere.it/index.php?nomobile=1",
+        "coordinates": {
+            "lat": 38.08937040000001,
+            "lng": 15.6540033
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Catanzaro Lido",
+        "address": "Parco Commerciale Le Fontane, Viale Emilia Catanzaro",
+        "link": "https://www.thespacecinema.it/al-cinema/catanzaro-lido",
+        "coordinates": {
+            "lat": 38.8448971,
+            "lng": 16.6462824
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Lamezia Terme",
+        "address": "c/o centro commerciale Due Mari Loc. Comuni Condomini S.S.280 Lamezia Terme",
+        "link": "https://www.thespacecinema.it/al-cinema/lamezia-terme",
+        "coordinates": {
+            "lat": 38.8987618,
+            "lng": 16.3499516
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Andromeda River",
+        "address": "Via Beato Francesco Marino Cosenza",
+        "link": "http://www.andromedariver.it/",
+        "coordinates": {
+            "lat": 39.3149642,
+            "lng": 16.2638969
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "America Hall",
+        "address": "Via T. Angelini 21 Napoli",
+        "link": "https://america.cinemadinapoli.18tickets.it/",
+        "coordinates": {
+            "lat": 40.8455056,
+            "lng": 14.2379861
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Filangieri Multisala",
+        "address": "Via Gaetano Filangieri, 43 Napoli",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 40.8360049,
+            "lng": 14.2411873
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "La Perla Multisala",
+        "address": "Via Nuova Agnano, 35 (Ang. V.le Kennedy) Napoli",
+        "link": "http://www.cineteatrolaperla.it/",
+        "coordinates": {
+            "lat": 40.8193942,
+            "lng": 14.1749649
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Metropolitan",
+        "address": "Via Chiaia, 149 Napoli",
+        "link": "http://www.cinemametropolitan.it/",
+        "coordinates": {
+            "lat": 40.8359794,
+            "lng": 14.2427158
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Modernissimo.it",
+        "address": "Via Cisterna dell'Olio, 59 Napoli",
+        "link": "https://modernissimo.andromeda.andromedacinemas.it/",
+        "coordinates": {
+            "lat": 40.8476922,
+            "lng": 14.2501608
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Posillipo",
+        "address": "Via Posillipo, 66/a Napoli",
+        "link": "https://m.facebook.com/cinemaposillipo",
+        "coordinates": {
+            "lat": 40.8031247,
+            "lng": 14.1970538
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Napoli",
+        "address": "Via G. del Mediterraneo, 46 - Parcheggio Napoli",
+        "link": "https://www.thespacecinema.it/al-cinema/napoli",
+        "coordinates": {
+            "lat": 40.8220953,
+            "lng": 14.1767076
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Happy Maxicinema",
+        "address": "c/o Le Porte di Napoli Ipercoop Afragola",
+        "link": "http://www.stellafilm.it/happy-maxicinema.html",
+        "coordinates": {
+            "lat": 40.9339304,
+            "lng": 14.3586303
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Casoria",
+        "address": "Via San Salvatore Casoria",
+        "link": "https://www.ucicinemas.it/cinema/campania/napoli/uci-cinemas-casoria-napoli/",
+        "coordinates": {
+            "lat": 40.89756999999999,
+            "lng": 14.3153431
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Nola",
+        "address": "Via Boscofangone Nola",
+        "link": "https://www.thespacecinema.it/al-cinema/nola",
+        "coordinates": {
+            "lat": 40.9501856,
+            "lng": 14.4868131
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Partenio",
+        "address": "Via G. Verdi Avellino",
+        "link": "http://www.multisalapartenio.it/",
+        "coordinates": {
+            "lat": 40.9144161,
+            "lng": 14.7883021
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Nuovo Multisala",
+        "address": "Via Pietro Nittoli, 1 Lioni",
+        "link": "http://www.cinemanuovo.it/",
+        "coordinates": {
+            "lat": 40.8790312,
+            "lng": 15.1815087
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movieplex",
+        "address": "Via Nicola S. Angelo Mercogliano",
+        "link": "http://www.movieplexmercogliano.it/",
+        "coordinates": {
+            "lat": 40.9116973,
+            "lng": 14.748702
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Carmen Cityplex Mirabella",
+        "address": "Via Variante 73 Mirabella Eclano",
+        "link": "http://www.cinemacarmen.it/",
+        "coordinates": {
+            "lat": 41.04361859999999,
+            "lng": 14.9958395
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Cinepolis Marcianise",
+        "address": "Localit\u00e0 Aurno, 87 Marcianise",
+        "link": "https://www.ucicinemas.it/cinema/campania/caserta/uci-cinemas-cinepolis-marcianise-caserta/",
+        "coordinates": {
+            "lat": 41.0037455,
+            "lng": 14.3295672
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Salerno",
+        "address": "Via A. Bandiera Salerno",
+        "link": "https://www.thespacecinema.it/al-cinema/salerno",
+        "coordinates": {
+            "lat": 40.6476707,
+            "lng": 14.8213415
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala La Fenice",
+        "address": "Via Marconi Pagani",
+        "link": "http://www.multisalalafenice.it/",
+        "coordinates": {
+            "lat": 40.7422222,
+            "lng": 14.6125
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "CineMaximall",
+        "address": "Via Pacinotti c/o Centro Comm.le Maximall Pontecagnano Faiano",
+        "link": "https://www.cinemaximall.com/",
+        "coordinates": {
+            "lat": 40.6352264,
+            "lng": 14.9074893
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Odeon",
+        "address": "Via Mascarella, 3 Bologna",
+        "link": "http://www.circuitocinemabologna.it/",
+        "coordinates": {
+            "lat": 44.4980584,
+            "lng": 11.3493004
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Bologna",
+        "address": "Viale Europa Bologna",
+        "link": "https://www.thespacecinema.it/al-cinema/bologna",
+        "coordinates": {
+            "lat": 44.5111752,
+            "lng": 11.3729111
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Meridiana",
+        "address": "Via Aldo Moro, 14 Casalecchio di Reno",
+        "link": "https://www.ucicinemas.it/cinema/emilia-romagna/bologna/uci-cinemas-meridiana-bologna/",
+        "coordinates": {
+            "lat": 44.4845299,
+            "lng": 11.2694281
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Apollo Multisala",
+        "address": "P.za Carbone, 35 Ferrara",
+        "link": "http://www.apollocinepark.it/index.php",
+        "coordinates": {
+            "lat": 44.8327451,
+            "lng": 11.6193955
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Ferrara",
+        "address": "Via Darsena, 77 Ferrara",
+        "link": "https://www.ucicinemas.it/cinema/emilia-romagna/ferrara/uci-cinemas-ferrara/",
+        "coordinates": {
+            "lat": 44.836617,
+            "lng": 11.60213
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinepark Cento",
+        "address": "Via Matteo Loves 17 Cento",
+        "link": "http://www.cinepark.it/",
+        "coordinates": {
+            "lat": 44.7484741,
+            "lng": 11.3033523
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinepark Comacchio",
+        "address": "Via Valle Isola, 1 Comacchio",
+        "link": "http://www.cineplus.it/",
+        "coordinates": {
+            "lat": 44.69328100000001,
+            "lng": 12.2203293
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Raffaello",
+        "address": "via Formigina, 380 Modena",
+        "link": "http://www.cinemaraffaello.it/",
+        "coordinates": {
+            "lat": 44.6355801,
+            "lng": 10.8929284
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Victoria Cinema",
+        "address": "Via Sergio Ramelli, 101 Modena",
+        "link": "http://www.victoriacinema.it/",
+        "coordinates": {
+            "lat": 44.6589761,
+            "lng": 10.9205612
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Parma Campus",
+        "address": "Largo Sergio Leone, 7/a Parma",
+        "link": "http://www.thespacecinema.it/portal/default/cinema/parma-campus#!tab=programmazione",
+        "coordinates": {
+            "lat": 44.76581909999999,
+            "lng": 10.3218056
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Parma Centro",
+        "address": "Largo Fausto Bocchi, 29/A Parma",
+        "link": "https://www.thespacecinema.it/al-cinema/parma-centro",
+        "coordinates": {
+            "lat": 44.7992982,
+            "lng": 10.341795
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Piacenza",
+        "address": "Via Corrado Visconti, 1 Piacenza",
+        "link": "https://www.ucicinemas.it/cinema/emilia-romagna/piacenza/uci-cinemas-piacenza/",
+        "coordinates": {
+            "lat": 45.02847149999999,
+            "lng": 9.695151
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinemacity Multiplex",
+        "address": "Via Secondo Bini, 5/7 Ravenna",
+        "link": "https://www.cinemacityravenna.it/",
+        "coordinates": {
+            "lat": 44.4179875,
+            "lng": 12.1712674
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinedream Multiplex",
+        "address": "Via Granarolo, 155 Faenza",
+        "link": "http://www.cinedream.it/",
+        "coordinates": {
+            "lat": 44.3118359,
+            "lng": 11.8977303
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Reggio Emilia",
+        "address": "Piazzale Atleti Azzuri D'Italia, 1 Reggio Emilia",
+        "link": "https://www.ucicinemas.it/cinema/emilia-romagna/reggio-emilia/uci-cinemas-reggio-emilia/",
+        "coordinates": {
+            "lat": 44.714902,
+            "lng": 10.6512487
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Nazionale Multisala",
+        "address": "Viale XX settembre, 30 Trieste",
+        "link": "http://www.triestecinema.it/",
+        "coordinates": {
+            "lat": 45.6524927,
+            "lng": 13.7827538
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Cinema",
+        "address": "Via D'Alviano, 23 Trieste",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.6339577,
+            "lng": 13.7806718
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multiplex Kinemax",
+        "address": "Via Grado, 50 Monfalcone",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.797851,
+            "lng": 13.5245798
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Villesse",
+        "address": "Tiare Shopping, Localit\u00e0 Maranuz, 2 Villesse",
+        "link": "https://www.ucicinemas.it/cinema/friuli-venezia-giulia/gorizia/uci-cinemas-villesse-gorizia/",
+        "coordinates": {
+            "lat": 45.8648225,
+            "lng": 13.4299518
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Zero",
+        "address": "P.zza Maestri del Lavoro, 3 Pordenone",
+        "link": "http://www.cinemazero.it/",
+        "coordinates": {
+            "lat": 45.9632408,
+            "lng": 12.6571278
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Fiume Veneto",
+        "address": "Via Maestri del lavoro 51 Fiume Veneto",
+        "link": "https://www.ucicinemas.it/cinema/friuli-venezia-giulia/pordenone/uci-cinemas-fiume-veneto-pordenone/",
+        "coordinates": {
+            "lat": 45.9456949,
+            "lng": 12.722812
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Visionario",
+        "address": "Via Asquini, 33 Udine",
+        "link": "http://www.visionario.movie/",
+        "coordinates": {
+            "lat": 46.064798,
+            "lng": 13.229044
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cine Citt\u00e0 Fiera",
+        "address": "Via Antonio Bardelli, 4 Martignacco",
+        "link": "http://www.cine-cittafiera.com/",
+        "coordinates": {
+            "lat": 46.0852499,
+            "lng": 13.1830474
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Pradamano",
+        "address": "SS. 56 Udine-Gorizia a Via Pier Paolo Pasolini n. 6 Pradamano",
+        "link": "http://www.thespacecinema.it/al-cinema/pradamano",
+        "coordinates": {
+            "lat": 46.02151720000001,
+            "lng": 13.2852735
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Dream Cinema",
+        "address": "via Gaeta snc Frosinone",
+        "link": "https://www.dreamcinema.net/",
+        "coordinates": {
+            "lat": 41.6175052,
+            "lng": 13.3396655
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Corso",
+        "address": "Corso Della Repubblica, 148 Latina",
+        "link": "https://www.cinemalatina.it/multisala-corso.html",
+        "coordinates": {
+            "lat": 41.4664083,
+            "lng": 12.9036879
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Oxer",
+        "address": "V.le P. Nervi, 124 Latina",
+        "link": "http://www.multisalaoxer.it/",
+        "coordinates": {
+            "lat": 41.4590474,
+            "lng": 12.888944
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Lux",
+        "address": "SS Pontina, Km 45,200 Aprilia",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 41.5094023,
+            "lng": 12.7972649
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Rio",
+        "address": "Via Del Rio 19 Terracina",
+        "link": "https://www.riocinemamultisala.com/",
+        "coordinates": {
+            "lat": 41.288016,
+            "lng": 13.2517478
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Moderno",
+        "address": "Via Cintia Rieti",
+        "link": "http://www.multisalamoderno.com/",
+        "coordinates": {
+            "lat": 42.4026375,
+            "lng": 12.8576517
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Circuito Corallo",
+        "address": "Via Innocenzo IV, 13/r Genova",
+        "link": "http://www.circuitocinemagenova.com/",
+        "coordinates": {
+            "lat": 44.4023415,
+            "lng": 8.935647699999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Porto Antico",
+        "address": "Via Magazzini del Cotone Genova",
+        "link": "https://www.thespacecinema.it/al-cinema/genova",
+        "coordinates": {
+            "lat": 44.4082155,
+            "lng": 8.9215279
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Fiumara",
+        "address": "Via Mantovani Genova",
+        "link": "https://www.ucicinemas.it/cinema/liguria/genova/uci-cinemas-fiumara-genova/",
+        "coordinates": {
+            "lat": 44.4135838,
+            "lng": 8.8805856
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Centrale",
+        "address": "Via Cascione, 52 Imperia",
+        "link": "http://www.cinemacentrale.com/",
+        "coordinates": {
+            "lat": 43.8767032,
+            "lng": 8.014524999999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Ariston",
+        "address": "Via Giacomo Matteotti 212 Sanremo",
+        "link": "https://www.aristonsanremo.com/",
+        "coordinates": {
+            "lat": 43.8175354,
+            "lng": 7.7776403
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Moderno",
+        "address": "Via del Carmine, 35 Sarzana",
+        "link": "http://moderno.it/",
+        "coordinates": {
+            "lat": 44.1128287,
+            "lng": 9.9575404
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Diana Multisala",
+        "address": "Via Brignoni 1/r Savona",
+        "link": "https://www.multisaladiana.com/",
+        "coordinates": {
+            "lat": 44.3106708,
+            "lng": 8.4789197
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Capitol",
+        "address": "Via Tasso, 41 Bergamo",
+        "link": "http://www.capitolbergamo.it/",
+        "coordinates": {
+            "lat": 45.696638,
+            "lng": 9.673003999999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Orio",
+        "address": "Via Toscana, 2 Azzano San Paolo",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.6614067,
+            "lng": 9.69788
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Curno",
+        "address": "Via Lega Lombarda, 39 Curno",
+        "link": "https://www.ucicinemas.it/cinema/lombardia/bergamo/uci-cinemas-curno-bergamo/",
+        "coordinates": {
+            "lat": 45.6847022,
+            "lng": 9.6121567
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Arcadia Stezzano",
+        "address": "CC Le Due Torri, Via Guzzanica 62/64 Stezzano",
+        "link": "http://arcadiacinema.com/",
+        "coordinates": {
+            "lat": 45.6471147,
+            "lng": 9.6291196
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Treviglio Anteo spazioCinema",
+        "address": "Viale Montegrappa, via Torriani Treviglio",
+        "link": "https://www.spaziocinema.info/treviglio",
+        "coordinates": {
+            "lat": 45.5192239,
+            "lng": 9.5832941
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Eden d\u2019estate",
+        "address": "Museo di Santa Giulia, via Musei, 81/b Brescia",
+        "link": "http://www.bresciamusei.com/",
+        "coordinates": {
+            "lat": 45.5392128,
+            "lng": 10.2291413
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Moretto",
+        "address": "Via S. Alessandro Brescia",
+        "link": "http://www.ilregnodelcinema.com/moretto/",
+        "coordinates": {
+            "lat": 45.5354082,
+            "lng": 10.2232603
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Oz",
+        "address": "Via Sorbanella, 12 Brescia",
+        "link": "http://www.ilregnodelcinema.com/",
+        "coordinates": {
+            "lat": 45.5235734,
+            "lng": 10.1777857
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Arcadia Erbusco",
+        "address": "Via Rovato, 44 Erbusco",
+        "link": "http://www.arcadiacinema.com/",
+        "coordinates": {
+            "lat": 45.5799886,
+            "lng": 9.9995172
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala King",
+        "address": "Via Fornace dei Gorghi Lonato del Garda",
+        "link": "http://www.multisalaking.it/",
+        "coordinates": {
+            "lat": 45.4231979,
+            "lng": 10.5055195
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinelandia Como",
+        "address": "Via Pasquale Paoli, 6 Como",
+        "link": "http://www.cinelandia.it/le-nostre-sale/cinema-como.html",
+        "coordinates": {
+            "lat": 45.790189,
+            "lng": 9.082072799999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinelandia Arosio",
+        "address": "Via Valassina Arosio",
+        "link": "https://www.cinelandiapark.it/",
+        "coordinates": {
+            "lat": 45.7216265,
+            "lng": 9.2151906
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Como",
+        "address": "Via Leopardi, 1/A Montano Lucino",
+        "link": "https://www.ucicinemas.it/cinema/lombardia/como/uci-cinemas-como/",
+        "coordinates": {
+            "lat": 45.7820111,
+            "lng": 9.0418139
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Anteo spazioCremona Po",
+        "address": "Via Castelleone, 108 Cremona",
+        "link": "https://cremona.spaziocinema.18tickets.it/",
+        "coordinates": {
+            "lat": 45.1496573,
+            "lng": 9.997305299999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Porta Nova",
+        "address": "Via Indipendenza, 44 Crema",
+        "link": "http://www.ilregnodelcinema.com/",
+        "coordinates": {
+            "lat": 45.3678902,
+            "lng": 9.6797732
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Ariston",
+        "address": "Via Principe Amedeo, 20 Mantova",
+        "link": "http://www.cineview.it/",
+        "coordinates": {
+            "lat": 45.1552734,
+            "lng": 10.7912101
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Capitol Anteo Spaziocinema",
+        "address": "Via A. Pennati 10 Monza",
+        "link": "https://www.spaziocinema.info/cinema",
+        "coordinates": {
+            "lat": 45.5865426,
+            "lng": 9.2744839
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movie Planet Busnago",
+        "address": "Via Berlinguer 48 Busnago",
+        "link": "https://www.movieplanetgroup.it/mp_busnago/index.php",
+        "coordinates": {
+            "lat": 45.6231021,
+            "lng": 9.4751595
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Lissone",
+        "address": "Via Madre Teresa Lissone",
+        "link": "https://www.ucicinemas.it/cinema/lombardia/milano/uci-cinemas-lissone-milano/",
+        "coordinates": {
+            "lat": 45.6339187,
+            "lng": 9.2238364
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "S. Rocco",
+        "address": "Via Cavour, 83 Seregno",
+        "link": "http://www.teatrosanrocco.com/",
+        "coordinates": {
+            "lat": 45.65003069999999,
+            "lng": 9.2105537
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Torribianche",
+        "address": "Via Torri Bianche, 16 Vimercate",
+        "link": "https://www.thespacecinema.it/al-cinema/vimercate",
+        "coordinates": {
+            "lat": 45.6009407,
+            "lng": 9.3591251
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Montebello D.B.",
+        "address": "Via Mirabella, 6 Montebello della Battaglia",
+        "link": "https://www.thespacecinema.it/al-cinema/montebello",
+        "coordinates": {
+            "lat": 45.000054,
+            "lng": 9.070876
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movie Planet Parona",
+        "address": "Strada per la Cattanea 106 Parona",
+        "link": "http://www.movieplanetgroup.it/",
+        "coordinates": {
+            "lat": 45.2763472,
+            "lng": 8.7882376
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movie Planet Centro Commerciale Bennet",
+        "address": "Via Cascina Madonna San Martino Siccomario",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.158514,
+            "lng": 9.136736
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Excelsior",
+        "address": "Via C. Battisti Sondrio",
+        "link": "http://www.excelsior-sondrio.it/",
+        "coordinates": {
+            "lat": 46.1700869,
+            "lng": 9.873571499999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Impero",
+        "address": "Via Bernasconi, 13 Varese",
+        "link": "http://www.multisalaimpero.com/",
+        "coordinates": {
+            "lat": 45.816517,
+            "lng": 8.826805
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinelandia Gallarate",
+        "address": "Viale Lombardia, 51 Gallarate",
+        "link": "https://www.cinelandiapark.it/",
+        "coordinates": {
+            "lat": 45.6588859,
+            "lng": 8.8098552
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Electric",
+        "address": "Viale Ticino, 82 Gavirate",
+        "link": "http://www.multisalaelectric.it/",
+        "coordinates": {
+            "lat": 45.8387986,
+            "lng": 8.7042279
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movieland Ancona Goldoni",
+        "address": "Via Montebello 91 Ancona",
+        "link": "https://ancona.movieland.18tickets.it/",
+        "coordinates": {
+            "lat": 43.6159545,
+            "lng": 13.5132071
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movieland Fabriano",
+        "address": "Via B. Gigli, 19 - Centro comm. Il Gentile Fabriano",
+        "link": "http://fabriano.movielandcinema.it/",
+        "coordinates": {
+            "lat": 43.347423,
+            "lng": 12.9222706
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multiplex Super 8",
+        "address": "Via Enrico Maintoppi Fermo",
+        "link": "http://www.multiplexsuper8.it/",
+        "coordinates": {
+            "lat": 43.1749306,
+            "lng": 13.6754896
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multiplex 2000",
+        "address": "Via Giovanni Battista Velluti Macerata",
+        "link": "http://www.multiplex2000.it/",
+        "coordinates": {
+            "lat": 43.2779811,
+            "lng": 13.5048416
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multiplex Maestoso",
+        "address": "C.da Colle delle Api, 1 (Zona Industriale) Campobasso",
+        "link": "http://www.cinemamaestoso.it/",
+        "coordinates": {
+            "lat": 41.58891,
+            "lng": 14.6618661
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cineplex Moderno",
+        "address": "Via Gambalera Angolo Via Rana, Alessandria",
+        "link": "https://cineplexmoderno.it/",
+        "coordinates": {
+            "lat": 44.8852831,
+            "lng": 8.698558799999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinelandia Casale Monferrato",
+        "address": "Piazza d'Armi, 1 Casale Monferrato",
+        "link": "http://www.cinelandia.it/le-nostre-sale/cinema-casale.html",
+        "coordinates": {
+            "lat": 45.12914370000001,
+            "lng": 8.4562607
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinelandia Asti",
+        "address": "Corso Alessandria, 250 Asti",
+        "link": "https://www.cinelandia.it/le-nostre-sale/cinema-asti.html",
+        "coordinates": {
+            "lat": 44.9066199,
+            "lng": 8.2268337
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cityplex Cine4",
+        "address": "via Giacosa 3 Alba",
+        "link": "http://www.cinequattro.com/",
+        "coordinates": {
+            "lat": 44.6981277,
+            "lng": 8.0351492
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinelandia Borgo",
+        "address": "Via Cuneo 86 Borgo San Dalmazzo",
+        "link": "https://www.cinelandia.it/le-nostre-sale/cinema-borgo-san-dalmazzo.html",
+        "coordinates": {
+            "lat": 44.3470873,
+            "lng": 7.506470699999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Vittoria",
+        "address": "Via Cavour, 20 Bra",
+        "link": "http://www.cinemavittoriabra.it/",
+        "coordinates": {
+            "lat": 44.69655170000001,
+            "lng": 7.8527578
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Italia",
+        "address": "Piazza Cavour, 12 Saluzzo",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 44.6443647,
+            "lng": 7.492726699999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cinem\u00e0",
+        "address": "Via Torino, 252 Savigliano",
+        "link": "https://www.cinemasavigliano.it/",
+        "coordinates": {
+            "lat": 44.6596416,
+            "lng": 7.658905400000001
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movie Planet Bellinzago",
+        "address": "V.le della Libert\u00e0, 231 Bellinzago Novarese",
+        "link": "http://www.movieplanetgroup.it/",
+        "coordinates": {
+            "lat": 45.5539548,
+            "lng": 8.6408396
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Nuovo Multisala",
+        "address": "Via IV Novembre, 25 Borgomanero",
+        "link": "https://m.facebook.com/profile.php/?id=100063279802227",
+        "coordinates": {
+            "lat": 45.6947297,
+            "lng": 8.4549583
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movie Planet Metropolis",
+        "address": "Via del Lago, 2 Castelletto sopra Ticino",
+        "link": "https://www.metropolisarea.it/mp_metropolis/index.php",
+        "coordinates": {
+            "lat": 45.719955,
+            "lng": 8.6012018
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Italia",
+        "address": "Piazza Pietro Pajetta, 3 Vercelli",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.3233061,
+            "lng": 8.4171943
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Cinemars Andria",
+        "address": "Contrada Barbadangelo c/o Ipercoop Andria Andria",
+        "link": "http://www.cinemars.it/",
+        "coordinates": {
+            "lat": 41.2459284,
+            "lng": 16.2953541
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Massimo",
+        "address": "Viale Lo Re, 3 Lecce",
+        "link": "http://www.multisalamassimo.it/",
+        "coordinates": {
+            "lat": 40.3514774,
+            "lng": 18.1742395
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Pianeta Multisala",
+        "address": "Via Lecce, 1 Nard\u00f2",
+        "link": "http://www.pianetacinema.it/",
+        "coordinates": {
+            "lat": 40.1945447,
+            "lng": 18.0743617
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Cinema",
+        "address": "Via R. Benzi Surbo",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 40.3965416,
+            "lng": 18.1297953
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multiplex Teatro Fasano",
+        "address": "Via donatori volontari di sangue 1 Taviano",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 39.9612614,
+            "lng": 18.1033587
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Paradiso",
+        "address": "Via R. Caputo Tricase",
+        "link": "http://www.cinematricase.it/",
+        "coordinates": {
+            "lat": 39.9328979,
+            "lng": 18.3588438
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Casablanca",
+        "address": "Contrada San Giovanni San Giorgio Jonico",
+        "link": "http://casablancamulticine.com/",
+        "coordinates": {
+            "lat": 40.4631178,
+            "lng": 17.3643515
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Greenwich",
+        "address": "Via Sassari, 67 Cagliari",
+        "link": "https://www.greenwichdessai.it/",
+        "coordinates": {
+            "lat": 39.217223,
+            "lng": 9.11088
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Notorious Cinemas Cagliari",
+        "address": "Piazza Unione Sarda Cagliari",
+        "link": "https://www.notoriouscinemas.it/cagliari/index.php",
+        "coordinates": {
+            "lat": 39.22708069999999,
+            "lng": 9.098005299999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Quartucciu",
+        "address": "Via delle Serre, 2 Quartucciu",
+        "link": "https://www.thespacecinema.it/al-cinema/quartucciu",
+        "coordinates": {
+            "lat": 39.2445528,
+            "lng": 9.1626639
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Sestu",
+        "address": "Ex S.S.131 km10,8 Loc.More Corraxe Sestu",
+        "link": "https://www.thespacecinema.it/al-cinema/sestu",
+        "coordinates": {
+            "lat": 39.3051019,
+            "lng": 9.0664411
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Madison Cineworld",
+        "address": "Localit\u00e0 Monte Figu Iglesias",
+        "link": "https://www.madisoncinemas.it/",
+        "coordinates": {
+            "lat": 39.3059669,
+            "lng": 8.565965
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multiplex Prato",
+        "address": "Via Enrico Devoto Nuoro",
+        "link": "http://www.multicinema.it/",
+        "coordinates": {
+            "lat": 40.3272902,
+            "lng": 9.2807151
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cityplex Tiffany",
+        "address": "Viale Boris Giuliano 34/36/38 Palermo",
+        "link": "https://cityplexpalermo.it/",
+        "coordinates": {
+            "lat": 38.14166240000001,
+            "lng": 13.3408255
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Eplanet King Palermo",
+        "address": "Via Ausonia, 111 Palermo",
+        "link": "https://eplanetcinemas.it/",
+        "coordinates": {
+            "lat": 38.1522219,
+            "lng": 13.3327773
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Gaudium",
+        "address": "Via D. Almeyda, 32 Palermo",
+        "link": "http://www.cinemagaudium.it/",
+        "coordinates": {
+            "lat": 38.1305397,
+            "lng": 13.3452743
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Empire Cinemas",
+        "address": "Viale della regione/sp1 Partinico",
+        "link": "http://www.empirecinemas.it/",
+        "coordinates": {
+            "lat": 38.05791079999999,
+            "lng": 13.131733
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Eplanet Catania",
+        "address": "V.le della Costituzione, 47 Catania",
+        "link": "https://eplanetcinemas.it/",
+        "coordinates": {
+            "lat": 37.5353694,
+            "lng": 15.095224
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Belpasso",
+        "address": "Localit\u00e0 Valcorrente S.S. 121 Km 11.500 - Belpasso Catania",
+        "link": "https://www.thespacecinema.it/al-cinema/belpasso",
+        "coordinates": {
+            "lat": 37.5428326,
+            "lng": 14.9543916
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Macherione",
+        "address": "Via P.pe di Piemonte, 88 Fiumefreddo di Sicilia",
+        "link": "http://www.comune.fiumefreddo-di-sicilia.ct.it/",
+        "coordinates": {
+            "lat": 37.7925385,
+            "lng": 15.207499
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cine teatro Garibaldi",
+        "address": "Via Garibaldi, 30/A Giarre",
+        "link": "https://www.cineteatrogaribaldi.com/",
+        "coordinates": {
+            "lat": 37.7262519,
+            "lng": 15.1810545
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Catania",
+        "address": "SP 54 Contrada Cubba Misterbianco",
+        "link": "https://www.ucicinemas.it/cinema/sicilia/catania/uci-cinemas-catania/",
+        "coordinates": {
+            "lat": 37.4768791,
+            "lng": 15.0125379
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Apollo",
+        "address": "Via C. Battisti, 111 Messina",
+        "link": "http://multisalaapollo.com/",
+        "coordinates": {
+            "lat": 38.1897595,
+            "lng": 15.5548724
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Screen Cinemas Messina",
+        "address": "Centro Commerciale Tremestieri, Strada Statale 114, Km 6,200 Messina",
+        "link": "https://www.thescreen.it/messina/index.php",
+        "coordinates": {
+            "lat": 38.1367364,
+            "lng": 15.5216102
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Screen Cinemas",
+        "address": "Via Firenze, Uscita Svincolo A20 Milazzo",
+        "link": "http://www.thescreen.it/",
+        "coordinates": {
+            "lat": 38.1862026,
+            "lng": 15.2673513
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Diana",
+        "address": "Via dei Mille, 19/21 Trapani",
+        "link": "http://www.cineteatrotrapani.it/",
+        "coordinates": {
+            "lat": 38.02031340000001,
+            "lng": 12.5264564
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Starplace Multisala",
+        "address": "SP55, Via S. Gaetano, 22 Alcamo",
+        "link": "http://www.starplacemultisala.it/",
+        "coordinates": {
+            "lat": 38.00168300000001,
+            "lng": 12.95539
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Principe",
+        "address": "Viale Matteotti 13 Firenze",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 43.7827537,
+            "lng": 11.2627274
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Firenze - Novoli",
+        "address": "Via di Novoli, 2 Firenze",
+        "link": "https://www.thespacecinema.it/al-cinema/firenze",
+        "coordinates": {
+            "lat": 43.7911697,
+            "lng": 11.2290339
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Firenze",
+        "address": "Via del Cavallaccio, 1 Firenze",
+        "link": "https://www.ucicinemas.it/cinema/toscana/firenze/uci-cinemas-firenze/",
+        "coordinates": {
+            "lat": 43.7722626,
+            "lng": 11.189168
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Campi Bisenzio",
+        "address": "Via F.lli Cervi 9 Campi Bisenzio",
+        "link": "https://www.ucicinemas.it/cinema/toscana/firenze/uci-cinemas-campi-bisenzio-firenze/",
+        "coordinates": {
+            "lat": 43.84415389999999,
+            "lng": 11.1375438
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Grotta",
+        "address": "Via A. Gramsci, 387 Sesto Fiorentino",
+        "link": "http://www.grotta.it/",
+        "coordinates": {
+            "lat": 43.8338211,
+            "lng": 11.2009004
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Arezzo",
+        "address": "Via Turati 2 Arezzo",
+        "link": "https://www.ucicinemas.it/cinema/toscana/arezzo/uci-cinemas-arezzo/",
+        "coordinates": {
+            "lat": 43.4789013,
+            "lng": 11.8687752
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cine8",
+        "address": "Via Farnia (zona Ipercoop) - Montevarchi Montevarchi",
+        "link": "http://www.staseraalcinema.it/",
+        "coordinates": {
+            "lat": 43.5363947,
+            "lng": 11.5633461
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Aurelia Antica",
+        "address": "Via Aurelia Antica, 46 Grosseto",
+        "link": "http://www.aureliaanticamultisala.it/",
+        "coordinates": {
+            "lat": 42.742861,
+            "lng": 11.1068393
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Grosseto",
+        "address": "Via Canada, 80/110 Grosseto",
+        "link": "https://www.thespacecinema.it/al-cinema/grosseto",
+        "coordinates": {
+            "lat": 42.7810171,
+            "lng": 11.1137416
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cineplex Pontedera",
+        "address": "Via Tosco Romagnola, 235B Pontedera",
+        "link": "http://www.ferrerocinemas.com/",
+        "coordinates": {
+            "lat": 43.6675019,
+            "lng": 10.64834
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Supercinema Lami",
+        "address": "Via Provinciale Francesca sud 10 Santa Croce sull'Arno",
+        "link": "https://www.staseraalcinema.it/supercinema-lami/",
+        "coordinates": {
+            "lat": 43.7091291,
+            "lng": 10.7788965
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Lux",
+        "address": "Corso Gramsci, 3 Pistoia",
+        "link": "https://www.staseraalcinema.it/multisala-lux/",
+        "coordinates": {
+            "lat": 43.9308535,
+            "lng": 10.9149125
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Imperiale",
+        "address": "Piazza D'Azeglio 5 Montecatini-Terme",
+        "link": "http://www.cinemaimperiale.it/",
+        "coordinates": {
+            "lat": 43.8836699,
+            "lng": 10.7726385
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Eden",
+        "address": "Via Cairoli, 20 Prato",
+        "link": "http://www.cinemaedenprato.it/",
+        "coordinates": {
+            "lat": 43.880097,
+            "lng": 11.097833
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cineplex Bolzano",
+        "address": "Via Macello 53/A Bolzano",
+        "link": "http://www.cineplexx.bz.it/",
+        "coordinates": {
+            "lat": 46.49317079999999,
+            "lng": 11.361143
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Perugia",
+        "address": "strada Centova 1D Perugia",
+        "link": "https://www.ucicinemas.it/cinema/umbria/perugia/uci-cinemas-perugia/",
+        "coordinates": {
+            "lat": 43.0964489,
+            "lng": 12.3554245
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Corciano",
+        "address": "Via L. Nervi snc Corciano",
+        "link": "https://www.thespacecinema.it/al-cinema/corciano",
+        "coordinates": {
+            "lat": 43.0990028,
+            "lng": 12.314351
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Cityplex Politeama Lucioli",
+        "address": "Largo Stanislao Falchi, 3 Terni",
+        "link": "http://www.cinemapoliteamaterni.it/",
+        "coordinates": {
+            "lat": 42.5608077,
+            "lng": 12.646203
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Terni",
+        "address": "via Bramante Terni",
+        "link": "https://www.thespacecinema.it/al-cinema/terni",
+        "coordinates": {
+            "lat": 42.5715406,
+            "lng": 12.6369943
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Venezia Marcon",
+        "address": "Via E. Mattei Marcon",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.5524579,
+            "lng": 12.3124305
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "IMG Cinemas Candiani",
+        "address": "Piazzale Candiani 7/a Mestre",
+        "link": "http://www.imgcinemas.it/",
+        "coordinates": {
+            "lat": 45.4945256,
+            "lng": 12.2398482
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Limena",
+        "address": "Via Breda, 15 Limena",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.4635525,
+            "lng": 11.84727
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Notorious Cinemas Rovigo",
+        "address": "Viale Porta Po 209 Rovigo",
+        "link": "https://www.notoriouscinemas.it/rovigo/index.php",
+        "coordinates": {
+            "lat": 45.02834920000001,
+            "lng": 11.7775573
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Cinergia",
+        "address": "Via Giacomo Matteotti, 6 Conegliano",
+        "link": "https://coneglianocinergia.18tickets.it/",
+        "coordinates": {
+            "lat": 45.8858997,
+            "lng": 12.3053404
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Silea",
+        "address": "Via del Porto, 1 Silea",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.6520346,
+            "lng": 12.2919187
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Verdi",
+        "address": "Via Lioni Vittorio Veneto",
+        "link": "http://www.multisalaverdi.it/",
+        "coordinates": {
+            "lat": 45.98,
+            "lng": 12.2994444
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Cinergia",
+        "address": "Via Mantova n. 13 Legnago",
+        "link": "https://legnagocinergia.18tickets.it/",
+        "coordinates": {
+            "lat": 45.1913648,
+            "lng": 11.2985394
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multisala Cristallo",
+        "address": "Corso Italia, 9 San Bonifacio",
+        "link": "https://cristallo.18tickets.it/",
+        "coordinates": {
+            "lat": 45.3966387,
+            "lng": 11.2714331
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Verona",
+        "address": "Via Monte Amiato San Giovanni Lupatoto",
+        "link": "https://www.ucicinemas.it/cinema/veneto/verona/uci-cinemas-verona/",
+        "coordinates": {
+            "lat": 45.3968676,
+            "lng": 11.0164092
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Verona - La Grande Mela",
+        "address": "Via Trentino, 1 Sona",
+        "link": "https://www.thespacecinema.it/al-cinema/verona",
+        "coordinates": {
+            "lat": 45.4393739,
+            "lng": 10.8642259
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Vicenza",
+        "address": "Via Brescia Torri di Quartesolo",
+        "link": "https://www.thespacecinema.it/al-cinema/vicenza",
+        "coordinates": {
+            "lat": 45.5105282,
+            "lng": 11.6226323
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "CityLife Anteo",
+        "address": "Piazza Tre Torri 1/L Milano",
+        "link": "http://www.spaziocinema.info/",
+        "coordinates": {
+            "lat": 45.4782409,
+            "lng": 9.155291499999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Colosseo",
+        "address": "Viale Monte Nero, 84 Milano",
+        "link": "http://www.ilregnodelcinema.com/colosseo",
+        "coordinates": {
+            "lat": 45.4616584,
+            "lng": 9.207932
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Notorious Cinemas Merlata Bloom Milano",
+        "address": "Via Daimler snc Milano",
+        "link": "https://www.notoriouscinemas.it/generic/landing.php",
+        "coordinates": {
+            "lat": 45.51421149999999,
+            "lng": 9.102865699999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Bicocca",
+        "address": "Viale Sarca, 336 Milano",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 45.5253028,
+            "lng": 9.216049199999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas MilanoFiori",
+        "address": "Viale Milanofiori Assago",
+        "link": "https://www.ucicinemas.it/cinema/lombardia/milano/uci-cinemas-milanofiori-milano/",
+        "coordinates": {
+            "lat": 45.4077682,
+            "lng": 9.151351199999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Arcadia Bellinzago",
+        "address": "Strada Statale Padana Superiore 154 Bellinzago Lombardo",
+        "link": "http://www.arcadiacinema.com/",
+        "coordinates": {
+            "lat": 45.5458793,
+            "lng": 9.453845
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space - Cerro Maggiore",
+        "address": "Autostrada A8 - Uscita Legnano Cerro Maggiore",
+        "link": "https://www.thespacecinema.it/al-cinema/cerro-maggiore",
+        "coordinates": {
+            "lat": 45.6009312,
+            "lng": 8.9482366
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Arcadia Melzo",
+        "address": "Via Martiri della Libert\u00e0, n. 5 Melzo",
+        "link": "http://www.arcadiacinema.com/",
+        "coordinates": {
+            "lat": 45.4991665,
+            "lng": 9.4193789
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Le Giraffe Multisala",
+        "address": "Via Brasile 4-6 Paderno Dugnano",
+        "link": "http://www.legiraffe.it/",
+        "coordinates": {
+            "lat": 45.5557013,
+            "lng": 9.1641203
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Pioltello",
+        "address": "Via S. Francesco, 33 Pioltello",
+        "link": "https://www.ucicinemas.it/cinema/lombardia/milano/uci-cinemas-pioltello-milano/",
+        "coordinates": {
+            "lat": 45.502767,
+            "lng": 9.3218468
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Rozzano",
+        "address": "C.so Pertini, 20 - Uscita 7 bis Tangenziale Ovest Rozzano",
+        "link": "https://www.thespacecinema.it/al-cinema/rozzano",
+        "coordinates": {
+            "lat": 45.3888421,
+            "lng": 9.177605999999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Movie Planet San Giuliano Milanese",
+        "address": "Via Leone Tolstoi 81 San Giuliano Milanese",
+        "link": "http://www.movieplanetgroup.it/",
+        "coordinates": {
+            "lat": 45.3818711,
+            "lng": 9.3023671
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Notorious Cinemas Sesto San giovanni",
+        "address": "Viale Sarca, terzo piano del Centro Sarca Sesto San Giovanni",
+        "link": "http://www.notoriouscinemas.it/",
+        "coordinates": {
+            "lat": 45.5291929,
+            "lng": 9.217856099999999
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Ciacky Multisala",
+        "address": "Traversa via Bitonto - Aeroporto Bari-Palese Bari",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 41.0839462,
+            "lng": 16.7758737
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multicinema Galleria",
+        "address": "C.so Italia, 15-17 Bari",
+        "link": "http://www.multicinemagalleria.it/",
+        "coordinates": {
+            "lat": 41.118726,
+            "lng": 16.8683407
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Multicinema Teatro Mangiatordi",
+        "address": "Via E. Montale snc Altamura",
+        "link": "https://www.mangiatordi.com/",
+        "coordinates": {
+            "lat": 40.8278212,
+            "lng": 16.5671506
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "The Space Cinema",
+        "address": "Centro comm.le Auchan - Via Noicattaro 2 Casamassima",
+        "link": "https://www.thespacecinema.it/al-cinema/casamassima",
+        "coordinates": {
+            "lat": 40.97110410000001,
+            "lng": 16.9262188
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Metropolis Circuito D'autore",
+        "address": "Via Baracca Mola",
+        "link": "No website available",
+        "coordinates": {
+            "lat": 41.0629383,
+            "lng": 17.0903926
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "UCI Cinemas Molfetta",
+        "address": "SS 16 bis uscita Molfetta Zona Industriale Molfetta",
+        "link": "https://www.ucicinemas.it/cinema/puglia/bari/uci-cinemas-molfetta-bari/",
+        "coordinates": {
+            "lat": 41.2167559,
+            "lng": 16.5469115
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
+    },
+    {
+        "name": "Red Carpet Cinema",
+        "address": "Via Baione Monopoli",
+        "link": "https://www.redcarpetcinema.it/",
+        "coordinates": {
+            "lat": 40.9587534,
+            "lng": 17.2697742
+        },
+        "showtime": {
+            "date": [
+                "2024-06-05",
+                "2024-06-06"
+            ]
+        }
     }
-  },
-  
-      {
-        "name": "Cineteatro Coviello",
-        "city": "Bitonto",
-        "address": "Via della Repubblica Italiana, 45, 70032 Bitonto BA",
-        "coordinates": {
-          "lat": 41.1173509346325,
-          "lng": 16.6916227302529
-        },
-        "showtime": {
-          "data": [
-            "2024-06-04",
-            "2024-06-05"
-          ]
-        }
-      },
-      {
-        "name": "Cineteatro Sala Farina",
-        "city": "Foggia",
-        "address": "Via Campanile, 10, 71121 Foggia FG",
-        "coordinates": {
-          "lat": 41.46461721621727,
-          "lng": 15.544610529876785
-        },
-        "showtime": {
-          "data": [
-            "2024-06-04",
-            "2024-06-05"
-          ]
-        }
-      },
-    {
-        "name": "Uci Cinema",
-        "city": "Molfetta",
-        "address": "Uci Cinema, Molfetta",
-        "coordinates": {
-            "lat": 41.217233295474934,
-            "lng": 16.54693640426078
-          },
-          "showtime": {
-            "data": [
-              "2024-06-04",
-              "2024-06-05"
-            ]
-          }
-        },
-    {
-        "name": "Nome del Cinema",
-        "city": "Montesilvano",
-        "address": "Viale Alberto D'Andrea, Montesilvano",
-        "coordinates": {
-            "lat": 42.5209973,
-            "lng": 14.1520203
-          },
-          "showtime": {
-            "data": [
-              "2024-06-04",
-              "2024-06-05"
-            ]
-          }
-        },
-    {
-        "name": "Cinema's name",
-        "city": "Spoltore",
-        "address": "via Federico Fellini s.n., Spoltore",
-        "coordinates": {
-            "lat": 42.4540959,
-            "lng": 14.1808568
-          },
-          "showtime": {
-            "data": [
-              "2024-06-04",
-              "2024-06-05"
-            ]
-          }
-        },
-    {
-        "name": "Cinema + nome",
-        "city": "Roma",
-        "address": "Piazza Cavour, 22, Roma",
-        "coordinates": {
-            "lat": 41.9060673,
-            "lng": 12.4697568
-          },
-          "showtime": {
-            "data": [
-              "2024-06-09",
-              "2024-06-01"
-            ]
-          }
-        },
-    {
-        "name": "cinema test",
-        "city": "Roma",
-        "address": "Via Mattia Battistini, 191, Roma",
-        "coordinates": {
-            "lat": 41.9127529,
-            "lng": 12.4181476
-          },
-          "showtime": {
-            "data": [
-              "2024-06-04",
-              "2024-06-05"
-            ]
-          }
-        },
-    {
-        "name": "Nome del Cinema",
-        "city": "Roma",
-        "address": "Viale Adriatico, 15/21, Roma",
-        "coordinates": {
-            "lat": 41.9385172,
-            "lng": 12.5350268
-          },
-          "showtime": {
-            "data": [
-              "2024-06-04",
-              "2024-06-05"
-            ]
-          }
-        },
-    {
-        "name": "The Space Cinema - Rozzano",
-        "city": "Rozzano",
-        "address": "Via Sandro Pertini, 20, 20089 Rozzano MI",
-        "coordinates": {
-          "lat": 45.391611325122284,
-          "lng": 9.177737518892116
-        },
-        "showtime": {
-          "data": [
-            "2024-06-04",
-            "2024-06-05"
-          ]
-        }
-      },
-      {
-        "name": "UCI Cinemas Milanofiori",
-        "city": "Assago",
-        "address": "V.le Milanofiori, 20090 Assago MI",
-        "coordinates": {
-          "lat": 45.409676186227955,
-          "lng": 9.150786667253254
-        },
-        "showtime": {
-          "data": [
-            "2024-06-04",
-            "2024-06-05"
-          ]
-        }
-      },
-      {
-        "name": "The Space Cinema Torino Parco Dora",
-        "city": "Torino",
-        "address": "Salita Michelangelo Garove, 10144 Torino TO",
-        "coordinates": {
-          "lat": 45.0904279734794,
-          "lng": 7.66913597889288
-        },
-        "showtime": {
-          "data": [
-            "2024-06-04",
-            "2024-06-05"
-          ]
-        }
-      }
 ]
-

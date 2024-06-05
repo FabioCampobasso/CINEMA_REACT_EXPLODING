@@ -52,7 +52,7 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
   const filteredCinemas = sortedCinemas.filter(
     (cinema) =>
       cinema.distance <= selectedDistance &&
-      cinema.showtime.data.some((showtimeDate) => {
+      cinema.showtime.date.some((showtimeDate) => {
         const formattedShowtimeDate = new Date(showtimeDate).getTime();
         const formattedSelectedDate = new Date(selectedDate).getTime();
         return formattedShowtimeDate === formattedSelectedDate;
@@ -95,7 +95,6 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
             CurrentFormattedDate={CurrentFormattedDate} // Pass handleDateChange prop
           />
           <ShowCard filteredCinemas={filteredCinemas} selectedCoordinates={selectedCoordinates} />
-          <footer className="bg-slate-600 text-slate-50">termini e condizioni</footer>
         </div>
       </div>
     </main>

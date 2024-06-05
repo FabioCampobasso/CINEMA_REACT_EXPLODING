@@ -23,7 +23,7 @@ const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
           <div className="flex">
             <div className="card-body p-4">
               <h2 className="card-title text-lg font-semibold mb-2">
-                {cinema.name} - {cinema.city}
+                {cinema.name}
               </h2>
               <p className="card-text text-gray-700">
                 {cinema.address} - {cinema.distance.toFixed(2)} km 
