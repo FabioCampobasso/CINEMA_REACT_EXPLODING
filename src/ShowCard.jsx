@@ -19,9 +19,18 @@ const ShowCard = ({ filteredCinemas, selectedCoordinates }) => {
         <div
           key={index}
           className="card m-3 bg-white shadow-md rounded-lg overflow-hidden text-sm"
+          onClick={() => {
+            if (cinema.link.includes('http')) {
+              window.open(cinema.link, '_blank');
+            }
+          }}
+          style={{
+            cursor: cinema.link.includes('http') ? 'pointer' : 'default',
+            pointerEvents: cinema.link.includes('http') ? 'auto' : 'none'
+          }}
         >
-          <div className="flex">
-            <div className="card-body p-4">
+          <div className="flex ">
+            <div className="card-body p-4 bg-hover">
               <h2 className="card-title text-lg font-semibold mb-2">
                 {cinema.name}
               </h2>

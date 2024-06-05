@@ -5,6 +5,7 @@ import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
 import citiesData from "../cities_coord.json";
 import { format } from 'date-fns';
+import locandina from "../img/locandina.jpg";
 
 const ShowElements = () => {
   const currentDate = new Date();
@@ -67,8 +68,8 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
     <div className="col-2"></div> {/* 3 colonne vuote */}
     <div className="col-8">
       <img
-        src="https://placehold.co/400x400"
-        alt="not_found"
+        src={locandina}
+        alt="Locandina - The Penitent"
         className="w-full h-auto"
         style={{ objectFit: "cover" }}
       />

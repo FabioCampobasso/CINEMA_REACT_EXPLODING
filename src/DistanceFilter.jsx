@@ -8,7 +8,7 @@ const DistanceFilter = ({ value, onChange, minDistance, maxDistance }) => {
         <input
           type="range"
           min={minDistance + 0.5}
-          max={maxDistance + 0.5}
+          max= {50}
           value={value}
           onChange={onChange}
           step="1"

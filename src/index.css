@@ -25,4 +25,7 @@ body {
   }
 
 
-
+  .bg-hover:hover {
+    background-color: #eeeeee; 
+  }
+  
