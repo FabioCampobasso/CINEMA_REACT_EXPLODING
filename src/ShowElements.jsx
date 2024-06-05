@@ -3,7 +3,7 @@ import { useSortedCinemas } from "./ShowCardLogic";
 import ShowFilter from "./ShowFilter";
 import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
-import citiesData from "../cities_coords.json";
+import citiesData from "../cities_coord.json";
 import { format } from 'date-fns';
 
 const ShowElements = () => {
