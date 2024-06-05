@@ -2,7 +2,7 @@ export default function DataFilter(selectedDate,handleDateChange){
 
     return (
         <>
-        <label>
+        <label className="text-sm">
         Data
       </label>
       <input
@@ -10,7 +10,7 @@ export default function DataFilter(selectedDate,handleDateChange){
         id="selected-date"
         value={selectedDate}
         onChange={(e) => handleDateChange(e.target.value)}
-        className="form-control text-sm"
+        className="form-control text-xs"
       />
       </>
     )

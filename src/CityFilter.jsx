@@ -9,7 +9,7 @@ const CityFilter = ({ searchCity, onCityChange}) => {
         value={searchCity}
         onChange={onCityChange}
         className="form-control text-sm"
-        placeholder="Inserisci il nome della città"
+        placeholder="Inserisci città"
       />
     </label>
   );

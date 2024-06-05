@@ -4,7 +4,7 @@ const DistanceFilter = ({ value, onChange, minDistance, maxDistance }) => {
   return (
     <article>
       
-      <p className="mb-1">{value.toFixed(2)} km da te:</p>
+      <p className="mb-1">{value.toFixed(2)} km:</p>
         <input
           type="range"
           min={minDistance + 0.5}
