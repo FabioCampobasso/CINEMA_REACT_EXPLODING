@@ -16,10 +16,12 @@ const useUserLocation = () => {
         },
         (error) => {
           setLocationError(true);
+          alert('Errore: ' + error.message);
         }
       );
     } else {
       setLocationError(true);
+      alert('Geolocalizzazione non supportata dal tuo browser.');
     }
   };
 
