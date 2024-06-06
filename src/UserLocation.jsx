@@ -16,7 +16,7 @@ const useUserLocation = () => {
         },
         (error) => {
           setLocationError(true);
-          alert('Errore: ' + error.message);
+          alert('Il tuo browser non permette la geolocalizzazione');
         }
       );
     } else {
