@@ -4,16 +4,16 @@ import ShowFilter from "./ShowFilter";
 import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
 import citiesData from "../cities_coord.json";
-import { format } from 'date-fns';
+import { format } from "date-fns";
 import locandina from "../img/locandina.jpg";
 
 const ShowElements = () => {
   const currentDate = new Date();
-const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
+  const CurrentFormattedDate = format(currentDate, "yyyy-MM-dd");
   const { location, requestLocation } = useUserLocation();
   const [searchCity, setSearchCity] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
-  const [selectedDate, setSelectedDate] = useState(CurrentFormattedDate); 
+  const [selectedDate, setSelectedDate] = useState(CurrentFormattedDate);
 
   const selectedCoordinates = selectedCity
     ? {
@@ -22,9 +22,8 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
       }
     : location;
 
-  const { sortedCinemas, minDistance, maxDistance } = useSortedCinemas(
-    selectedCoordinates
-  );
+  const { sortedCinemas, minDistance, maxDistance } =
+    useSortedCinemas(selectedCoordinates);
   const [selectedDistance, setSelectedDistance] = useState(maxDistance);
 
   const handleCityChange = (event) => {
@@ -50,37 +49,32 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
     setSelectedDate(date);
   };
 
-  const filteredCinemas = sortedCinemas.filter(
-    (cinema) =>
+  const filteredCinemas = sortedCinemas.filter((cinema) => {
+    return (
       cinema.distance <= selectedDistance &&
-      cinema.showtime.date.some((showtimeDate) => {
-        const formattedShowtimeDate = new Date(showtimeDate).getTime();
-        const formattedSelectedDate = new Date(selectedDate).getTime();
-        return formattedShowtimeDate === formattedSelectedDate;
-      })
-  );
+      Object.keys(cinema.showtime).includes(selectedDate) // Controlla se la data selezionata è tra le chiavi
+    );
+  });
 
   return (
-    <main className="w-full h-screen">
-      <div className="flex flex-col md:flex-row h-full">
-      <header className="w-full md:w-3/12 bg-slate-600 p-4">
-  <div className="row">
-    <div className="col-2"></div> {/* 3 colonne vuote */}
-    <div className="col-8">
-      <img
-        src={locandina}
-        alt="Locandina - The Penitent"
-        className="w-full h-auto"
-        style={{ objectFit: "cover" }}
-      />
-    </div>
-    <div className="col-2"></div> {/* 3 colonne vuote */}
-  </div>
+    <main className="d-flex flex-column">
+      <div className="flex flex-col md:flex-row">
+        <header className="w-full md:w-3/12 bg-gray-900 p-4">
+          <div className="row">
+            <div className="col-2"></div> 
+            <div className="col-8">
+              <img
+                src={locandina}
+                alt="Locandina - The Penitent"
+                className="w-full h-auto shadow-lg"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div className="col-2"></div> 
+          </div>
+        </header>
 
-</header>
-
-
-        <div className="w-full bg-white flex flex-col">
+        <div className="w-full flex flex-col">
           <ShowFilter
             location={location}
             requestLocation={requestLocation}
@@ -93,10 +87,18 @@ const CurrentFormattedDate = format(currentDate, 'yyyy-MM-dd');
             maxDistance={maxDistance}
             selectedDate={selectedDate}
             handleDateChange={handleDateChange}
-            CurrentFormattedDate={CurrentFormattedDate} // Pass handleDateChange prop
+            CurrentFormattedDate={CurrentFormattedDate}
           />
-          <ShowCard filteredCinemas={filteredCinemas} selectedCoordinates={selectedCoordinates} />
+          <ShowCard
+            filteredCinemas={filteredCinemas}
+            selectedCoordinates={selectedCoordinates}
+            selectedDate={selectedDate}
+          />
+                  <footer className="bg-gray-800 p-4 text-white">
+          Termini e condizioni
+        </footer>
         </div>
+
       </div>
     </main>
   );

@@ -4,15 +4,15 @@ const DistanceFilter = ({ value, onChange, minDistance, maxDistance }) => {
   return (
     <article>
       
-      <p className="mb-1">{value.toFixed(2)} km:</p>
+      <p className="text-gray-100 text-con-regular ml-1 mb-2">{value.toFixed(2)} km:</p>
         <input
           type="range"
           min={minDistance + 0.5}
-          max= {50}
+          max= {200}
           value={value}
           onChange={onChange}
           step="1"
-          className="text-sm form-range mr-2"
+          className="slider mr-2 "
         />       
     
     </article>

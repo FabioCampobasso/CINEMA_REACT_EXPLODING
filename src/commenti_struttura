@@ -1,0 +1,18 @@
+UserLocation = rintraccia la poszione
+ReadData = legge il json con le info sui cinema
+ShowElements = rintraccia le coordinate delle città inserite in CityFilter
+
+-----------------------------
+
+utilitis = funzione che calcola la distanza tra due punti in coordinate
+ShowCardLogic = arrivano i dati e mette a confronto le coordinate dei cinema con quelle o dell'utente o della città inserita (priorità città)
+
+CityFilter = html filtro
+DataFilter = html filtro
+DistanceFilter = html filtro
+
+ShowFilter = contenitore a cui vengono inviate tutte le prop che vengono poi richiamate dai singoli filtri e viceversa
+
+ShowElements = sistema tutti i calcoli per comprendere cosa far apparire 
+
+ShowCard = si occupa di mostrare le card nell'ordine definito da "filteredCinemas" in ShowElements
