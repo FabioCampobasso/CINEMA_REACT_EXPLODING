@@ -39,7 +39,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
                 {cinema.name}
               </h2> 
               <p
-                className=" text-gray-500 text-bold"
+                className=" text-gray-500 text-regular text-sm"
                 alt={`All'indirizzo: ${cinema.address}`}
               >
                 {cinema.address} - {cinema.distance.toFixed(2)} km
