@@ -56,17 +56,17 @@ function DateFilter({ selectedDate, handleDateChange }) {
       className=" bg-slate-100"
     >
       {dates.map((date) => (
-        <button
-          key={date}
-          value={date} 
-          onClick={() => handleDateClick(date)}
-          disabled={isBefore(new Date(date), today)}
-          className={` m-0 p-3 px-4 font-semibold text-md text-gray-500 text-regular border-1 ${
-            isSelectedDate(date)
-              ? "border-x-2 border-x-white bg-rose-600 text-white text-bold"
-              : "border-l-slate-200"
-          }`}
-        >
+ <button
+ key={date}
+ value={date}
+ onClick={() => handleDateClick(date)}
+ disabled={isBefore(new Date(date), today)}
+ className={`m-0 p-3 px-4 font-semibold text-md ${isBefore(new Date(date), today) ? "bg-gray-200 text-gray-300 border-x-2 border-x-white" : "text-gray-500"} text-regular border-1 ${
+   isSelectedDate(date)
+     ? "border-x-2 border-x-white bg-rose-600 text-white text-bold"
+     : "border-l-slate-200"
+ }`}
+>
            {format(new Date(date), "d MMM", { locale: it })}<br />
            {format(new Date(date), "EEE", { locale: it })}
         </button>

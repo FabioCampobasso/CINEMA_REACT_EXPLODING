@@ -7,7 +7,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
   };
 
   return (
-    <div className="bg-gray-300 pt-3 pb-5">
+    <div className="bg-gray-300 ">
       {isEmpty(filteredCinemas) ? (
         <div className="d-flex flex-column align-items-center p-6 m-16">
           <img
@@ -23,10 +23,10 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
       {filteredCinemas.map((cinema, index) => (
         <div
           key={index}
-          className="m-3 mb-4 "
+          className="m-3 "
         >
           <div className="flex ">
-            <div className="w-full p-3 pt-4 pb-4 bg-hover bg-gray-100 rounded-xl border-radius-card">
+            <div className="w-full p-3 pt-4 pb-4 bg-gray-100 rounded-xl border-radius-card">
               <h2
                 className=" text-xl mb-0 text-con-bold text-gray-700"
                 alt={`Cinema: ${cinema.name}`}
@@ -37,7 +37,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
                 }}
               >
                 {cinema.name}
-              </h2>
+              </h2> 
               <p
                 className=" text-gray-500 text-bold"
                 alt={`All'indirizzo: ${cinema.address}`}
@@ -48,7 +48,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
               <div>
                 {Object.keys(cinema.showtime[selectedDate]).map((key) => (
                   <button
-                    className="bg-gray-600 text-bold text-gray-100 p-1 px-2 mt-2 mr-2 text-xs rounded-pill"
+                    className="bg-gray-600 text-bold text-gray-100 p-1 px-2 mt-2 mr-2 text-xs rounded-pill bg-hover"
                     key={cinema.showtime[selectedDate][key].ora}
                     onClick={() =>
                       (window.location.href =

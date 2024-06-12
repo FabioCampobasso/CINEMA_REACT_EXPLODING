@@ -14,6 +14,7 @@ const ShowElements = () => {
   const [searchCity, setSearchCity] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedDate, setSelectedDate] = useState(CurrentFormattedDate);
+  const [visibleCount, setVisibleCount] = useState(2);
 
   const selectedCoordinates = selectedCity
     ? {
@@ -22,16 +23,23 @@ const ShowElements = () => {
       }
     : location;
 
-  const { sortedCinemas, minDistance, maxDistance } =
-    useSortedCinemas(selectedCoordinates);
+  const { sortedCinemas, maxDistance } = useSortedCinemas(selectedCoordinates);
   const [selectedDistance, setSelectedDistance] = useState(maxDistance);
+
+  const handleShowMore = () => {
+    setVisibleCount(prevCount => prevCount + 2);
+  };
+
+  const filteredCinemas = sortedCinemas
+    .filter(cinema => Object.keys(cinema.showtime).includes(selectedDate))
+    .slice(0, visibleCount);
 
   const handleCityChange = (event) => {
     const cityName = event.target.value;
     setSearchCity(cityName);
 
     const city = citiesData.cities.find(
-      (c) => c.name.toLowerCase() === cityName.toLowerCase()
+      c => c.name.toLowerCase() === cityName.toLowerCase()
     );
 
     if (city) {
@@ -49,19 +57,12 @@ const ShowElements = () => {
     setSelectedDate(date);
   };
 
-  const filteredCinemas = sortedCinemas.filter((cinema) => {
-    return (
-      cinema.distance <= selectedDistance &&
-      Object.keys(cinema.showtime).includes(selectedDate) // Controlla se la data selezionata è tra le chiavi
-    );
-  });
-
   return (
     <main className="d-flex flex-column">
       <div className="flex flex-col md:flex-row">
         <header className="w-full md:w-3/12 bg-gray-900 p-4">
           <div className="row">
-            <div className="col-2"></div> 
+            <div className="col-2"></div>
             <div className="col-8">
               <img
                 src={locandina}
@@ -70,7 +71,7 @@ const ShowElements = () => {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <div className="col-2"></div> 
+            <div className="col-2"></div>
           </div>
         </header>
 
@@ -83,8 +84,6 @@ const ShowElements = () => {
             selectedCoordinates={selectedCoordinates}
             selectedDistance={selectedDistance}
             handleDistanceChange={handleDistanceChange}
-            minDistance={minDistance}
-            maxDistance={maxDistance}
             selectedDate={selectedDate}
             handleDateChange={handleDateChange}
             CurrentFormattedDate={CurrentFormattedDate}
@@ -94,11 +93,20 @@ const ShowElements = () => {
             selectedCoordinates={selectedCoordinates}
             selectedDate={selectedDate}
           />
-                  <footer className="bg-gray-800 p-4 text-white">
-          Termini e condizioni
-        </footer>
+          {filteredCinemas.length > 0 && (
+            <div className="bg-gray-300 p-3 d-flex justify-content-center">
+              <button
+                className="border-radius-class text-gray-500 bg-gray-200 col-span-3 text-md m-2 p-2 px-3 text-con-regular "
+                onClick={handleShowMore}
+              >
+                Mostra altri
+              </button>
+            </div>
+          )}
+          <footer className="bg-gray-800 p-4 text-white">
+            Termini e condizioni
+          </footer>
         </div>
-
       </div>
     </main>
   );

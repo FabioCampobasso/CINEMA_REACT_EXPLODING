@@ -21,7 +21,7 @@ height: 200px;
    }
 
   .bg-hover:hover {
-    border: 3px solid #f43f5e; 
+    background-color: #f43f5e; 
   }
 
   .form-control:focus {
@@ -108,6 +108,14 @@ input {
   padding: 10px 0;
   scroll-behavior: smooth;
 }
+
+.container_center{
+  justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically, optional based on your needs */
+}
+
+
+
 
 
 

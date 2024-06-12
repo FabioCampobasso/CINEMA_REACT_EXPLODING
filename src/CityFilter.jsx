@@ -21,12 +21,12 @@ const CityFilter = ({ searchCity, onCityChange }) => {
 
   return (
     <label>
-      <h6 className="text-gray-100 text-con-regular ml-1">Filtra per città:</h6>
+      <h6 className="text-gray-100 text-con-regular ml-1">Scegli la città:</h6>
       <input 
         type="text"
         value={searchCity}
         onChange={handleInputChange}
-        className="border-radius-class p-2 bg-gray-200 text-xs text-gray-800 mt-1 text: capitalize "
+        className="border-radius-class p-2 bg-gray-700 text-xs text-gray-200 mt-1 text: capitalize"
         placeholder="Inserisci città"
       />
       {!isExactMatch && suggestions.length > 0  && (

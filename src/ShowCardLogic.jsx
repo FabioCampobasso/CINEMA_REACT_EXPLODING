@@ -8,26 +8,29 @@ const useSortedCinemas = (selectedCoordinates = null) => {
   const userLocation = useUserLocation();
   const cinemas = useData();
 
+  // Select the appropriate coordinates to use
   const baseCoordinates = selectedCoordinates || userLocation;
 
-  const sortedCinemas = cinemas
-    .map((cinema) => {
+  // Initialize sortedCinemas only if valid coordinates are provided
+  let sortedCinemas = [];
+
+  // Check if baseCoordinates are valid before proceeding
+  if (baseCoordinates && baseCoordinates.lat != null && baseCoordinates.lng != null) {
+    sortedCinemas = cinemas.map(cinema => {
       const distance = calculateDistance(
         baseCoordinates.lat,
         baseCoordinates.lng,
         cinema.coordinates.lat,
         cinema.coordinates.lng
       );
-
       return { ...cinema, distance };
-    })
-    .sort((a, b) => a.distance - b.distance);
+    }).sort((a, b) => a.distance - b.distance);
 
-  const minDistance = sortedCinemas.length ? sortedCinemas[0].distance : 0;
-  const maxDistance = sortedCinemas.length ? sortedCinemas[sortedCinemas.length - 1].distance : 30;
+  }
 
-  return { sortedCinemas, minDistance, maxDistance };
+  return { sortedCinemas};
 };
 
 export { useSortedCinemas };
+
 
