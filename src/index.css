@@ -118,7 +118,10 @@ input {
   background-color: #e11d48;
   background-image: url('../img/icon_geo.svg'); /* Replace with the actual path to your image */
   background-size: cover; /* Cover ensures the image covers the entire button */
-
+  background-position: center; /* Center the image within the button */
+  display: flex; /* Use flex to center content inside the button */
+  justify-content: center; /* Horizontally center the content inside the button */
+  align-items: center; /* Vertically center the content inside the button */
 }
 
 
