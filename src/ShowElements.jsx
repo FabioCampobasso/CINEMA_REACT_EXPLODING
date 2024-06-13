@@ -27,11 +27,11 @@ const ShowElements = () => {
   const [selectedDistance, setSelectedDistance] = useState(maxDistance);
 
   const handleShowMore = () => {
-    setVisibleCount(prevCount => prevCount + 2);
+    setVisibleCount((prevCount) => prevCount + 2);
   };
 
   const filteredCinemas = sortedCinemas
-    .filter(cinema => Object.keys(cinema.showtime).includes(selectedDate))
+    .filter((cinema) => Object.keys(cinema.showtime).includes(selectedDate))
     .slice(0, visibleCount);
 
   const handleCityChange = (event) => {
@@ -39,7 +39,7 @@ const ShowElements = () => {
     setSearchCity(cityName);
 
     const city = citiesData.cities.find(
-      c => c.name.toLowerCase() === cityName.toLowerCase()
+      (c) => c.name.toLowerCase() === cityName.toLowerCase()
     );
 
     if (city) {

@@ -2,31 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   background-color: #1f2937;
 }
 
 img {
-
-width: 200px;
-height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
-  .border-radius-card{
-   border-radius: 1.5rem;
-  }
+.border-radius-card {
+  border-radius: 1.5rem;
+}
 
-  .border-radius-class{
-    border-radius: 0.5rem;
-   }
+.border-radius-class {
+  border-radius: 0.5rem;
+}
 
-  .bg-hover:hover {
-    background-color: #f43f5e; 
-  }
+.bg-hover:hover {
+  background-color: #f43f5e;
+}
 
-  .form-control:focus {
-    border-color: inherit; /* Annulla il cambio di colore del bordo */
-    box-shadow: none;      /* Rimuove l'ombra esterna (glow effect) */
+.form-control:focus {
+  border-color: inherit; /* Annulla il cambio di colore del bordo */
+  box-shadow: none; /* Rimuove l'ombra esterna (glow effect) */
 }
 
 .capitalize-first {
@@ -37,27 +36,27 @@ height: 200px;
   text-transform: uppercase;
 }
 
-.tail_date{
+.tail_date {
   width: 200px;
 }
 
 .text-regular {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400; /* Peso normale */
 }
 
 .text-bold {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700; /* Peso grassetto */
 }
 
 .text-con-regular {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400; /* Peso normale */
 }
 
 .text-con-bold {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700; /* Peso grassetto */
 }
 
@@ -97,8 +96,8 @@ input {
   border-radius: 50%;
 }
 
-.carousel_button_small{
- width: 1.5rem;
+.carousel_button_small {
+  width: 1.5rem;
 }
 
 .scrollableContainer {
@@ -109,29 +108,18 @@ input {
   scroll-behavior: smooth;
 }
 
-.container_center{
+.container_center {
   justify-content: center; /* Centers children horizontally */
-    align-items: center; /* Centers children vertically, optional based on your needs */
+  align-items: center; /* Centers children vertically, optional based on your needs */
 }
 
 .geo_button {
-  background-color: #e11d48;
-  background-image: url('../img/icon_geo.svg'); /* Replace with the actual path to your image */
-  background-size: cover; /* Cover ensures the image covers the entire button */
-  background-position: center; /* Center the image within the button */
   display: flex; /* Use flex to center content inside the button */
   justify-content: center; /* Horizontally center the content inside the button */
   align-items: center; /* Vertically center the content inside the button */
 }
 
-
-
-
-
-
-
-
-
-
-
+.width_input{
+ width: 80%;
   
+}

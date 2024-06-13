@@ -21,10 +21,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
         </div>
       ) : null}
       {filteredCinemas.map((cinema, index) => (
-        <div
-          key={index}
-          className="m-3 "
-        >
+        <div key={index} className="m-3 ">
           <div className="flex ">
             <div className="w-full p-3 pt-4 pb-4 bg-gray-100 rounded-xl border-radius-card">
               <h2
@@ -37,7 +34,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
                 }}
               >
                 {cinema.name}
-              </h2> 
+              </h2>
               <p
                 className=" text-gray-500 text-regular text-sm"
                 alt={`All'indirizzo: ${cinema.address}`}

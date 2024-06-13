@@ -8,7 +8,6 @@ function DateFilter({ selectedDate, handleDateChange }) {
   const today = startOfDay(new Date());
 
   useEffect(() => {
-
     const newDates = Array.from({ length: 201 }, (_, index) =>
       format(addDays(new Date(selectedDate), index - 101), "yyyy-MM-dd")
     );
@@ -44,31 +43,32 @@ function DateFilter({ selectedDate, handleDateChange }) {
     justifyContent: "center",
     overflowX: "scroll",
     whiteSpace: "nowrap",
-    
+
     scrollbarWidth: "none",
     msOverflowStyle: "none",
   };
 
   return (
-    <div
-      ref={containerRef}
-      style={scrollableStyle}
-      className=" bg-slate-100"
-    >
+    <div ref={containerRef} style={scrollableStyle} className=" bg-slate-100">
       {dates.map((date) => (
- <button
- key={date}
- value={date}
- onClick={() => handleDateClick(date)}
- disabled={isBefore(new Date(date), today)}
- className={`m-0 p-3 font-semibold text-sm ${isBefore(new Date(date), today) ? "bg-gray-200 text-gray-300 border-x-2 border-x-white" : "text-gray-500"} text-regular border-1 ${
-   isSelectedDate(date)
-     ? "border-x-2 border-x-white bg-rose-600 text-white text-bold"
-     : "border-l-slate-200"
- }`}
->
-           {format(new Date(date), "d MMM", { locale: it })}<br />
-           {format(new Date(date), "EEE", { locale: it })}
+        <button
+          key={date}
+          value={date}
+          onClick={() => handleDateClick(date)}
+          disabled={isBefore(new Date(date), today)}
+          className={`m-0 p-3 font-semibold text-sm ${
+            isBefore(new Date(date), today)
+              ? "bg-gray-200 text-gray-300 border-x-2 border-x-white"
+              : "text-gray-500"
+          } text-regular border-1 ${
+            isSelectedDate(date)
+              ? "border-x-2 border-x-white bg-rose-600 text-white text-bold"
+              : "border-l-slate-200"
+          }`}
+        >
+          {format(new Date(date), "d MMM", { locale: it })}
+          <br />
+          {format(new Date(date), "EEE", { locale: it })}
         </button>
       ))}
     </div>

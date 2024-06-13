@@ -1,4 +1,3 @@
-
 import React from "react";
 import useUserLocation from "./UserLocation";
 import useData from "./ReadData";
@@ -15,22 +14,25 @@ const useSortedCinemas = (selectedCoordinates = null) => {
   let sortedCinemas = [];
 
   // Check if baseCoordinates are valid before proceeding
-  if (baseCoordinates && baseCoordinates.lat != null && baseCoordinates.lng != null) {
-    sortedCinemas = cinemas.map(cinema => {
-      const distance = calculateDistance(
-        baseCoordinates.lat,
-        baseCoordinates.lng,
-        cinema.coordinates.lat,
-        cinema.coordinates.lng
-      );
-      return { ...cinema, distance };
-    }).sort((a, b) => a.distance - b.distance);
-
+  if (
+    baseCoordinates &&
+    baseCoordinates.lat != null &&
+    baseCoordinates.lng != null
+  ) {
+    sortedCinemas = cinemas
+      .map((cinema) => {
+        const distance = calculateDistance(
+          baseCoordinates.lat,
+          baseCoordinates.lng,
+          cinema.coordinates.lat,
+          cinema.coordinates.lng
+        );
+        return { ...cinema, distance };
+      })
+      .sort((a, b) => a.distance - b.distance);
   }
 
-  return { sortedCinemas};
+  return { sortedCinemas };
 };
 
 export { useSortedCinemas };
-
-
