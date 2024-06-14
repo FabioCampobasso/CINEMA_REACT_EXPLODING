@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import citiesData from '../cities_coord.json';
+import citiesData from '../cities_coord.json'; // Assicurati che il percorso sia corretto
 
 const PositionFilter = ({ searchCity, onCityChange, location, requestLocation }) => {
   const [suggestions, setSuggestions] = useState([]);
   const [isFocused, setIsFocused] = useState(false);
-  const containerRef = useRef(null);
+  const containerRef = useRef(null); // Riferimento al container del componente per gestire il focus
 
-  const updateSuggestions = (userInput) => {
+  const handleInputChange = (event) => {
+    onCityChange(event);
+    const userInput = event.target.value.trimEnd();
     if (userInput.length > 1) {
       const filteredSuggestions = citiesData.cities
         .filter(city => city.name.toLowerCase().startsWith(userInput.toLowerCase()))
@@ -18,31 +20,36 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
     }
   };
 
-  const handleInputChange = (event) => {
-    onCityChange(event);
-    const userInput = event.target.value.trimEnd();
-    updateSuggestions(userInput);
-  };
-
   const handleFocus = () => {
     setIsFocused(true);
-    updateSuggestions(searchCity);
+    // Ricarica i suggerimenti se l'input ha già un valore
+    if (searchCity && suggestions.length === 0) {
+      const userInput = searchCity.trimEnd();
+      if (userInput.length > 1) {
+        const filteredSuggestions = citiesData.cities
+          .filter(city => city.name.toLowerCase().startsWith(userInput.toLowerCase()))
+          .map(city => city.name)
+          .slice(0, 3);
+        setSuggestions(filteredSuggestions);
+      }
+    }
   };
 
   const handleBlur = () => {
-    setIsFocused(false);
+    // La funzione di blur è gestita dall'hook useEffect per il riferimento del container
   };
 
   const handleCitySelect = (city) => {
     onCityChange({ target: { value: city } });
-    setIsFocused(false);
+    setIsFocused(false); // Chiudi i suggerimenti quando selezioni una città
   };
 
   const handleRequestLocationClick = () => {
     requestLocation();
-    setIsFocused(false);
+    setIsFocused(false); // Chiudi i suggerimenti quando selezioni "La tua posizione"
   };
 
+  // Hook per gestire il click al di fuori del componente per chiudere i suggerimenti
   useEffect(() => {
     function handleClickOutside(event) {
       if (containerRef.current && !containerRef.current.contains(event.target)) {
@@ -53,7 +60,7 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [containerRef]);
 
   return (
     <div ref={containerRef} className="w-full p-4 lg:p-6 relative bg-gray-800">
@@ -63,7 +70,6 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
           value={searchCity}
           onChange={handleInputChange}
           onFocus={handleFocus}
-          onBlur={handleBlur}
           className="rounded-lg w-full p-2 lg:mt-4 lg:mx-4 bg-gray-700 text-gray-300 border-gray-700 placeholder-gray-300 text-sm lg:text-xl"
           placeholder="Inserisci città"
         />
