@@ -14,7 +14,7 @@ const ShowElements = () => {
   const [searchCity, setSearchCity] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedDate, setSelectedDate] = useState(CurrentFormattedDate);
-  const [visibleCount, setVisibleCount] = useState(2);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   const selectedCoordinates = selectedCity
     ? {
@@ -58,57 +58,59 @@ const ShowElements = () => {
   };
 
   return (
-    <main className="d-flex flex-column">
-      <div className="flex flex-col md:flex-row">
-        <header className="w-full md:w-3/12 bg-gray-900 p-4">
-          <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
-              <img
-                src={locandina}
-                alt="Locandina - The Penitent"
-                className="w-full h-auto shadow-lg"
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <div className="col-2"></div>
-          </div>
-        </header>
-
-        <div className="w-full flex flex-col">
-          <ShowFilter
-            location={location}
-            requestLocation={requestLocation}
-            searchCity={searchCity}
-            handleCityChange={handleCityChange}
-            selectedCoordinates={selectedCoordinates}
-            selectedDistance={selectedDistance}
-            handleDistanceChange={handleDistanceChange}
-            selectedDate={selectedDate}
-            handleDateChange={handleDateChange}
-            CurrentFormattedDate={CurrentFormattedDate}
-          />
-          <ShowCard
-            filteredCinemas={filteredCinemas}
-            selectedCoordinates={selectedCoordinates}
-            selectedDate={selectedDate}
-          />
-          {filteredCinemas.length > 0 && (
-            <div className="bg-gray-300 p-3 d-flex justify-content-center">
-              <button
-                className="border-radius-class text-gray-700 bg-gray-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular "
-                onClick={handleShowMore}
-              >
-                Mostra altri
-              </button>
-            </div>
-          )}
-          <footer className="bg-gray-800 p-4 text-white">
-            Termini e condizioni
-          </footer>
-        </div>
+<main className="d-flex flex-column">
+  <div className="flex flex-col lg:flex-row">
+    <header className="w-full bg-gray-900 flex justify-center items-center lg:items-start lg:p-10">
+      <div className="w-full">
+        <img
+          src={locandina}
+          alt="Locandina - The Penitent"
+          className="w-full h-auto shadow-lg"
+          style={{ objectFit: "cover" }}
+        />
+        <div className=" hidden lg:block pt-10 pb-10 px-2">
+              <h1 className="text-gray-100 text-bold text-2xl">Trama:</h1>
+              <p className="text-gray-100 text-regular">Trama film un po lunghetta</p>
+              </div>
       </div>
-    </main>
+
+    </header>
+
+    <div className="w-full lg:w-3/4 flex flex-col">
+      <ShowFilter
+        location={location}
+        requestLocation={requestLocation}
+        searchCity={searchCity}
+        handleCityChange={handleCityChange}
+        selectedCoordinates={selectedCoordinates}
+        selectedDistance={selectedDistance}
+        handleDistanceChange={handleDistanceChange}
+        selectedDate={selectedDate}
+        handleDateChange={handleDateChange}
+        CurrentFormattedDate={CurrentFormattedDate}
+      />
+      <ShowCard
+        filteredCinemas={filteredCinemas}
+        selectedCoordinates={selectedCoordinates}
+        selectedDate={selectedDate}
+      />
+      {filteredCinemas.length > 0 && (
+        <div className="bg-gray-300 p-3 d-flex justify-content-center">
+          <button
+            className="border-radius-class text-gray-700 bg-gray-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular"
+            onClick={handleShowMore}
+          >
+            Mostra altri
+          </button>
+        </div>
+      )}
+      <footer className="bg-gray-800 p-4 text-white">
+        Termini e condizioni
+      </footer>
+    </div>
+  </div>
+</main>
+
   );
 };
 

@@ -44,19 +44,19 @@ function DateFilter({ selectedDate, handleDateChange }) {
     overflowX: "scroll",
     whiteSpace: "nowrap",
 
-    scrollbarWidth: "none",
-    msOverflowStyle: "none",
+    // scrollbarWidth: "none",
+    // msOverflowStyle: "none",
   };
 
   return (
-    <div ref={containerRef} style={scrollableStyle} className=" bg-slate-100">
+    <div ref={containerRef} style={scrollableStyle} className=" bg-slate-100 ">
       {dates.map((date) => (
         <button
           key={date}
           value={date}
           onClick={() => handleDateClick(date)}
           disabled={isBefore(new Date(date), today)}
-          className={`m-0 p-3 font-semibold text-sm ${
+          className={`m-0 p-3  font-semibold text-sm lg:text-xl ${
             isBefore(new Date(date), today)
               ? "bg-gray-200 text-gray-300 border-x-2 border-x-white"
               : "text-gray-500"

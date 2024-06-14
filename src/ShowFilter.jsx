@@ -12,12 +12,14 @@ const ShowFilter = ({
 }) => {
   return (
     <>
-
-
-  <div className="col-span-12 text-xs">
-    <PositionFilter searchCity={searchCity} onCityChange={handleCityChange} requestLocation={requestLocation} location={location}/>
-  </div>
-
+      <div className="col-span-12">
+        <PositionFilter
+          searchCity={searchCity}
+          onCityChange={handleCityChange}
+          requestLocation={requestLocation}
+          location={location}
+        />
+      </div>
 
       <div>
         <DateFilter

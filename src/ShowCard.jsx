@@ -9,8 +9,8 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
   return (
     <div className="bg-gray-300 ">
       {isEmpty(filteredCinemas) ? (
-        <div className="d-flex flex-column align-items-center p-6 m-16">
-          <img
+        <div className="d-flex flex-column align-items-center p-6 m-16 lg:h-screen">
+        <img
             src={not_found}
             className=" mb-6"
             alt={`Nessun cinema trovato`}

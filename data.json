@@ -216,5 +216,317 @@
                 }
             }
         }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
+    }
+    ,   {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
+    },
+    {
+        "name": "UCI Cinemas Red Carpet",
+        "address": "via Enzo Ferrari Matera",
+        "link": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/",
+        "coordinates": {
+            "lat": 40.6878438,
+            "lng": 16.5464697
+        },
+        "showtime": {
+            "2024-06-15": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            },
+            "2024-06-14": {
+                "orario1": {
+                    "ora": "16:20",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario2": {
+                    "ora": "19:50",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                },
+                "orario3": {
+                    "ora": "22:10",
+                    "url": "https://www.ucicinemas.it/cinema/basilicata/matera/uci-cinemas-redcarpet-matera/"
+                }
+            }
+        }
     }
 ]
