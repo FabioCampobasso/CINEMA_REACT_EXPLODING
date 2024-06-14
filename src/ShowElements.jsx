@@ -96,7 +96,7 @@ const ShowElements = () => {
           {filteredCinemas.length > 0 && (
             <div className="bg-gray-300 p-3 d-flex justify-content-center">
               <button
-                className="border-radius-class text-gray-500 bg-gray-200 col-span-3 text-md m-2 p-2 px-3 text-con-regular "
+                className="border-radius-class text-gray-700 bg-gray-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular "
                 onClick={handleShowMore}
               >
                 Mostra altri

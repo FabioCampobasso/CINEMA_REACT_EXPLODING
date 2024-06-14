@@ -12,7 +12,7 @@ const PositionFilter = ({
 
   const handleInputChange = (event) => {
     onCityChange(event);
-    const userInput = event.target.value;
+    const userInput = event.target.value.trimEnd(); // Rimuove gli spazi finali dall'input
     if (userInput.length > 1) {
       const filteredSuggestions = citiesData.cities
         .filter((city) =>
