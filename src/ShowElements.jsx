@@ -82,7 +82,7 @@ const ShowElements = () => {
             <h1 className="text-gray-100 font-bold text-3xl text-left mb-5">The Watchers - Loro ti guardano</h1>
           </div>
           <h1 className="text-gray-100 font-bold text-2xl">Trama:</h1>
-          <p className="text-gray-100 font-normal">Trama film un po lunghetta</p>
+          <p className="text-gray-100 font-normal">Mina, una commessa, si ritrova intrappolata in una foresta irlandese maledetta, osservata da creature misteriose che prendono le forme di chi le guarda. Di notte, il bosco diventa un luogo di terrore, costringendo Mina e altri sopravvissuti a lottare per la sopravvivenza in un rifugio di cemento. Un thriller horror che esplora i temi del doppio e l'empatia nel cuore oscuro della natura.</p>
         </div>
       </div>
     </header>
