@@ -7,6 +7,7 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
   const containerRef = useRef(null); // Riferimento al container del componente per gestire il focus
 
   const handleInputChange = (event) => {
+    setIsFocused(true);
     onCityChange(event);
     const userInput = event.target.value.trimEnd();
     if (userInput.length > 1) {
@@ -33,10 +34,6 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
         setSuggestions(filteredSuggestions);
       }
     }
-  };
-
-  const handleBlur = () => {
-    // La funzione di blur è gestita dall'hook useEffect per il riferimento del container
   };
 
   const handleCitySelect = (city) => {
@@ -70,8 +67,8 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
           value={searchCity}
           onChange={handleInputChange}
           onFocus={handleFocus}
-          className="rounded-lg w-full p-2 lg:mt-4 lg:mx-4 bg-gray-700 text-gray-300 border-gray-700 placeholder-gray-300 text-sm lg:text-xl"
-          placeholder="Inserisci città"
+          className="rounded-lg w-full p-2 lg:mt-4 lg:mx-4 bg-gray-700 text-gray-300 border-gray-700 placeholder-gray-400 text-sm lg:text-xl"
+          placeholder="Inserisci città e scropri il cinema più vicino a te"
         />
         {isFocused && (
           <ul className="list-group absolute w-full top-full bg-white shadow-lg ml-0 lg:ml-4">

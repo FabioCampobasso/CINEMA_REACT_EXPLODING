@@ -5,7 +5,8 @@ import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
 import citiesData from "../cities_coord.json";
 import { format } from "date-fns";
-import locandina from "../img/locandina.jpg";
+import locandina_vert from "../img/locandina.png";
+import locandina_orizz from "../img/locandina.jpg";
 
 const ShowElements = () => {
   const currentDate = new Date();
@@ -62,20 +63,29 @@ const ShowElements = () => {
   <div className="flex flex-col lg:flex-row">
     <header className="w-full bg-gray-900 flex justify-center items-center lg:items-start lg:p-10">
       <div className="w-full">
+        {/* Immagine per schermi non-lg */}
         <img
-          src={locandina}
-          alt="Locandina - The Penitent"
-          className="w-full h-auto shadow-lg"
+          src={locandina_orizz}
+          alt="The Watcher - locandina"
+          className="w-full h-full shadow-lg mx-auto mt-4 lg:hidden"
           style={{ objectFit: "cover" }}
         />
-        <div className=" hidden lg:block pt-10 pb-10 px-2">
-              <h1 className="text-gray-100 text-bold text-2xl">Trama:</h1>
-              <p className="text-gray-100 text-regular">Trama film un po lunghetta</p>
-              </div>
+        {/* Immagine per schermi lg */}
+        <img
+          src={locandina_vert}
+          alt="The Watcher - locandina"
+          className="hidden lg:block w-full h-full shadow-lg mx-auto mt-4"
+          style={{ objectFit: "cover" }}
+        />
+        <div className="hidden lg:block pt-10 pb-10 px-2">
+          <div className="flex flex-col items-left justify-left bg-gray-900">
+            <h1 className="text-gray-100 font-bold text-3xl text-left mb-5">The Watchers - Loro ti guardano</h1>
+          </div>
+          <h1 className="text-gray-100 font-bold text-2xl">Trama:</h1>
+          <p className="text-gray-100 font-normal">Trama film un po lunghetta</p>
+        </div>
       </div>
-
     </header>
-
     <div className="w-full lg:w-3/4 flex flex-col">
       <ShowFilter
         location={location}
