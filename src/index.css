@@ -3,9 +3,16 @@
 @tailwind utilities;
 
 html {
-  background-color: #1f2937;
-
+  background-color: #1f2937; /* Sets the background color to a dark blue-grey */
 }
+
+@media (min-width: 1024px) {
+  html {
+    overflow: hidden; /* Disables scrolling for screens wider than 1024px */
+  }
+}
+
+
 
 img {
   width: 200px;
