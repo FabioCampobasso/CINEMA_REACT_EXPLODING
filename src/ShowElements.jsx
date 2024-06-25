@@ -67,10 +67,9 @@ const ShowElements = () => {
         <img
           src={locandina_orizz}
           alt="The Watcher - locandina"
-          className="w-full h-full shadow-lg mx-auto mt-4 lg:hidden"
+          className="w-full h-full shadow-lg mx-auto mt-0 lg:hidden"
           style={{ objectFit: "cover" }}
         />
-        {/* Immagine per schermi lg */}
         <img
           src={locandina_vert}
           alt="The Watcher - locandina"
