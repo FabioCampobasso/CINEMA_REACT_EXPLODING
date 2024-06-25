@@ -58,8 +58,8 @@ function DateFilter({ selectedDate, handleDateChange }) {
           disabled={isBefore(new Date(date), today)}
           className={`m-0 p-3  font-semibold text-sm lg:text-xl ${
             isBefore(new Date(date), today)
-              ? "bg-gray-200 text-gray-300 border-x-2 border-x-white"
-              : "text-gray-500"
+              ? "bg-zinc-200 text-zinc-300 border-x-2 border-x-white"
+              : "text-zinc-500"
           } text-regular border-1 ${
             isSelectedDate(date)
               ? "border-x-2 border-x-white bg-rose-600 text-white text-bold"

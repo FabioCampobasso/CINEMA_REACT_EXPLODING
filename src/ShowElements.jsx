@@ -61,7 +61,7 @@ const ShowElements = () => {
   return (
 <main className="d-flex flex-column">
   <div className="flex flex-col lg:flex-row">
-    <header className="w-full bg-gray-900 flex justify-center items-center lg:items-start lg:p-10">
+    <header className="w-full bg-zinc-900 flex justify-center items-center lg:items-start lg:p-10">
       <div className="w-full">
         {/* Immagine per schermi non-lg */}
         <img
@@ -78,11 +78,11 @@ const ShowElements = () => {
           style={{ objectFit: "cover" }}
         />
         <div className="hidden lg:block pt-10 pb-10 px-2">
-          <div className="flex flex-col items-left justify-left bg-gray-900">
-            <h1 className="text-gray-100 font-bold text-3xl text-left mb-5">The Watchers - Loro ti guardano</h1>
+          <div className="flex flex-col items-left justify-left bg-zinc-900">
+            <h1 className="text-zinc-100 font-bold text-3xl text-left mb-5">The Watchers - Loro ti guardano</h1>
           </div>
-          <h1 className="text-gray-100 font-bold text-2xl">Trama:</h1>
-          <p className="text-gray-100 font-normal">
+          <h1 className="text-zinc-100 font-bold text-2xl">Trama:</h1>
+          <p className="text-zinc-100 font-normal">
             Mina, una commessa, si ritrova intrappolata in una foresta irlandese maledetta, 
             osservata da creature misteriose che prendono le forme di chi le guarda. 
             Di notte, il bosco diventa un luogo di terrore, costringendo Mina e altri 
@@ -111,16 +111,16 @@ const ShowElements = () => {
         selectedDate={selectedDate}
       />
       {filteredCinemas.length > 0 && (
-        <div className="bg-gray-300 p-3 d-flex justify-content-center">
+        <div className="bg-zinc-300 p-3 d-flex justify-content-center">
           <button
-            className="border-radius-class text-gray-700 bg-gray-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular"
+            className="border-radius-class text-zinc-700 bg-zinc-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular"
             onClick={handleShowMore}
           >
             Mostra altri
           </button>
         </div>
       )}
-      <footer className="bg-gray-800 p-4 text-white">
+      <footer className="bg-zinc-800 p-4 text-white">
         Termini e condizioni
       </footer>
     </div>

@@ -60,21 +60,21 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
   }, [containerRef]);
 
   return (
-    <div ref={containerRef} className="w-full p-4 lg:p-6 relative bg-gray-800">
+    <div ref={containerRef} className="w-full p-4 lg:p-6 relative bg-zinc-800">
       <div className="col-span-12 relative">
         <input
           type="text"
           value={searchCity}
           onChange={handleInputChange}
           onFocus={handleFocus}
-          className="rounded-lg w-full p-2 lg:mt-4 lg:mx-4 bg-gray-700 text-gray-300 border-gray-700 placeholder-gray-400 text-sm lg:text-xl"
+          className="rounded-lg w-full p-2 lg:mt-4 lg:mx-4 bg-zinc-700 text-zinc-300 border-zinc-700 placeholder-zinc-400 text-sm lg:text-xl"
           placeholder="Inserisci città e scropri il cinema più vicino a te"
         />
         {isFocused && (
           <ul className="list-group absolute w-full top-full bg-white shadow-lg ml-0 lg:ml-4">
             {!location && (
               <li
-                className="bg-rose-600 list-group-item text-gray-200 cursor-pointer border-rose-600 font-bold py-2 text-sm"
+                className="bg-rose-600 list-group-item text-zinc-200 cursor-pointer border-rose-600 font-bold py-2 text-sm"
                 onClick={handleRequestLocationClick}
                 onMouseDown={(e) => e.preventDefault()}
               >
@@ -84,7 +84,7 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
             {suggestions.map((city, index) => (
               <li
                 key={index}
-                className="list-group-item text-gray-600 bg-gray-200 text-xs capitalize py-2 px-2 cursor-pointer"
+                className="list-group-item text-zinc-600 bg-zinc-200 text-xs capitalize py-2 px-2 cursor-pointer"
                 onClick={() => handleCitySelect(city)}
               >
                 {city}
