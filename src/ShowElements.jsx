@@ -75,9 +75,10 @@ const ShowElements = () => {
           className="hidden lg:block w-full h-full shadow-lg mx-auto mt-4"
           style={{ objectFit: "cover" }}
         />
+         <h1 className="text-zinc-100 font-bold text-xl text-center mt-2 mb-3 lg:text-3xl lg:text-left lg:mb-5">Bad Boys - Ride or die</h1>
         <div className="hidden lg:block pt-10 pb-10 px-2">
           <div className="flex flex-col items-left justify-left bg-zinc-900">
-            <h1 className="text-zinc-100 font-bold text-3xl text-left mb-5">Bad Boys - Ride or die</h1>
+    
           </div>
           <h1 className="text-zinc-100 font-bold text-2xl">Trama:</h1>
           <p className="text-zinc-100 font-normal">
