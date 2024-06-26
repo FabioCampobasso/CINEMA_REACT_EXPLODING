@@ -47,10 +47,10 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
                   <button
                     className="bg-zinc-600 text-bold text-zinc-100 p-1 px-2 mt-2 mr-2 text-xs rounded-pill bg-hover"
                     key={cinema.showtime[selectedDate][key].ora}
-                    onClick={() =>
-                      (window.location.href =
-                        cinema.showtime[selectedDate][key].url)
-                    }
+                    onClick={() => {
+                      window.location.href = cinema.showtime[selectedDate][key].url;
+                      window.open(cinema.showtime[selectedDate][key].url, '_blank');
+                    }}
                   >
                     {cinema.showtime[selectedDate][key].ora}
                   </button>

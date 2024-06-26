@@ -68,8 +68,8 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
           onChange={handleInputChange}
           onFocus={handleFocus}
           className="rounded-lg w-full p-2 lg:mt-4 lg:mx-4 bg-zinc-700 text-zinc-300 border-zinc-700 placeholder-zinc-400 text-sm lg:text-xl"
-          placeholder="Inserisci città e scropri il cinema più vicino a te"
-        />
+          placeholder={location ? "➤ La tua posizione" : "Inserisci città e scopri il cinema più vicino a te"}
+          />
         {isFocused && (
           <ul className="list-group absolute w-full top-full bg-white shadow-lg ml-0 lg:ml-4">
             {!location && (

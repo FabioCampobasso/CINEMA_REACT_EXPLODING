@@ -155,12 +155,13 @@ footer {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 10px;
+  background: transparent;
+  width: 0px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #d4d4d8; 
+  background: transparent; 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -176,9 +177,16 @@ footer {
 @media (min-width: 1024px) {
   ::-webkit-scrollbar-thumb {
     background: #d4d4d8; 
+    width: 5px;
+    height: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+}
+
+.sticky-element {
+  position: sticky;
+  top: 0; /* Distanza dall'alto del viewport quando l'elemento diventa 'sticky' */
 }

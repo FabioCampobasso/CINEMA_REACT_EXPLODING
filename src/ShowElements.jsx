@@ -63,7 +63,6 @@ const ShowElements = () => {
   <div className="flex flex-col lg:flex-row">
     <header className="w-full bg-zinc-900 flex justify-center items-center lg:items-start lg:p-10">
       <div className="w-full">
-        {/* Immagine per schermi non-lg */}
         <img
           src={locandina_orizz}
           alt="The Watcher - locandina"
@@ -90,19 +89,23 @@ const ShowElements = () => {
         </div>
       </div>
     </header>
+    
+    
     <div className="w-full lg:w-3/4 flex flex-col">
-      <ShowFilter
-        location={location}
-        requestLocation={requestLocation}
-        searchCity={searchCity}
-        handleCityChange={handleCityChange}
-        selectedCoordinates={selectedCoordinates}
-        selectedDistance={selectedDistance}
-        handleDistanceChange={handleDistanceChange}
-        selectedDate={selectedDate}
-        handleDateChange={handleDateChange}
-        CurrentFormattedDate={CurrentFormattedDate}
-      />
+  <div className="sticky top-0 z-50"> {/* Aggiunta di sticky qui */}
+    <ShowFilter
+      location={location}
+      requestLocation={requestLocation}
+      searchCity={searchCity}
+      handleCityChange={handleCityChange}
+      selectedCoordinates={selectedCoordinates}
+      selectedDistance={selectedDistance}
+      handleDistanceChange={handleDistanceChange}
+      selectedDate={selectedDate}
+      handleDateChange={handleDateChange}
+      CurrentFormattedDate={CurrentFormattedDate}
+    />
+  </div>
       <ShowCard
         className="scroll"
         filteredCinemas={filteredCinemas}

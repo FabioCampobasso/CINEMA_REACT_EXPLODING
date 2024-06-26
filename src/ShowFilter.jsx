@@ -11,7 +11,7 @@ const ShowFilter = ({
   selectedDate,
 }) => {
   return (
-    <>
+    <div>
       <div className="col-span-12">
         <PositionFilter
           searchCity={searchCity}
@@ -27,7 +27,7 @@ const ShowFilter = ({
           handleDateChange={handleDateChange}
         />
       </div>
-    </>
+    </div>
   );
 };
 
