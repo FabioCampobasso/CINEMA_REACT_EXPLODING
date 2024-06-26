@@ -9,7 +9,7 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
   const handleInputChange = (event) => {
     setIsFocused(true);
     onCityChange(event);
-    const userInput = event.target.value.trimEnd();
+    const userInput = event.target.value.trim();
     if (userInput.length > 1) {
       const filteredSuggestions = citiesData.cities
         .filter(city => city.name.toLowerCase().startsWith(userInput.toLowerCase()))
@@ -23,9 +23,8 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
 
   const handleFocus = () => {
     setIsFocused(true);
-    // Ricarica i suggerimenti se l'input ha già un valore
     if (searchCity && suggestions.length === 0) {
-      const userInput = searchCity.trimEnd();
+      const userInput = searchCity.value;
       if (userInput.length > 1) {
         const filteredSuggestions = citiesData.cities
           .filter(city => city.name.toLowerCase().startsWith(userInput.toLowerCase()))
@@ -38,15 +37,14 @@ const PositionFilter = ({ searchCity, onCityChange, location, requestLocation })
 
   const handleCitySelect = (city) => {
     onCityChange({ target: { value: city } });
-    setIsFocused(false); // Chiudi i suggerimenti quando selezioni una città
+    setIsFocused(false); 
   };
 
   const handleRequestLocationClick = () => {
     requestLocation();
-    setIsFocused(false); // Chiudi i suggerimenti quando selezioni "La tua posizione"
+    setIsFocused(false); 
   };
 
-  // Hook per gestire il click al di fuori del componente per chiudere i suggerimenti
   useEffect(() => {
     function handleClickOutside(event) {
       if (containerRef.current && !containerRef.current.contains(event.target)) {

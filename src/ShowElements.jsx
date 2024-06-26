@@ -65,13 +65,13 @@ const ShowElements = () => {
       <div className="w-full">
         <img
           src={locandina_orizz}
-          alt="The Watcher - locandina"
+          alt="Bad Boys"
           className="w-full h-full shadow-lg mx-auto mt-0 lg:hidden"
           style={{ objectFit: "cover" }}
         />
         <img
           src={locandina_vert}
-          alt="The Watcher - locandina"
+          alt="Bad Boys"
           className="hidden lg:block w-full h-full shadow-lg mx-auto mt-4"
           style={{ objectFit: "cover" }}
         />
@@ -111,6 +111,7 @@ const ShowElements = () => {
         filteredCinemas={filteredCinemas}
         selectedCoordinates={selectedCoordinates}
         selectedDate={selectedDate}
+        location={location}
       />
       {filteredCinemas.length > 0 && (
         <div className="bg-zinc-300 p-3 d-flex justify-content-center">

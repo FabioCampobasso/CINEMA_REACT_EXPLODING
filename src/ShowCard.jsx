@@ -1,25 +1,41 @@
 import React from "react";
 import not_found from "../img/not_found.png";
+import cerca from "../img/cerca.png";
 
-const ShowCard = ({ filteredCinemas, selectedDate }) => {
+const ShowCard = ({ filteredCinemas, selectedDate, location }) => {
   const isEmpty = (arr) => {
     return arr.length === 0;
   };
 
   return (
-<div className="bg-zinc-300 ">
-      {isEmpty(filteredCinemas) ? (
-        <div className="d-flex flex-column align-items-center p-6 m-16 lg:h-screen">
-        <img
-            src={not_found}
-            className=" mb-6"
-            alt={`Nessun cinema trovato`}
-          />
-          <h2 className="text-bold text-center text-lg">
-            Non ho trovato cinema
-          </h2>
-        </div>
-      ) : null}
+    <div className="bg-zinc-300">
+    {isEmpty(filteredCinemas) ? (
+      <div className="d-flex flex-column align-items-center p-6 m-16 lg:h-screen">
+        {location ? (
+          <>
+            <img
+              src={not_found}
+              className="mb-1"
+              alt="Nessun cinema trovato"
+            />
+            <h2 className="text-bold text-center text-lg">
+              Non ho trovato cinema
+            </h2>
+          </>
+        ) : (
+          <>
+            <img
+              src={cerca}
+              className="mb-1"
+              alt="Cerca"
+            />
+            <h2 className="text-bold text-center text-lg">
+              Cerca il cinema più vicino a te
+            </h2>
+          </>
+        )}
+      </div>
+    ) : null}
       {filteredCinemas.map((cinema, index) => (
         <div key={index} className="m-3 ">
           <div className="flex ">
