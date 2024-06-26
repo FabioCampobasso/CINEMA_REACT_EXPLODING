@@ -7,7 +7,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
   };
 
   return (
-    <div className="bg-zinc-300 ">
+<div className="bg-zinc-300 ">
       {isEmpty(filteredCinemas) ? (
         <div className="d-flex flex-column align-items-center p-6 m-16 lg:h-screen">
         <img
@@ -23,7 +23,7 @@ const ShowCard = ({ filteredCinemas, selectedDate }) => {
       {filteredCinemas.map((cinema, index) => (
         <div key={index} className="m-3 ">
           <div className="flex ">
-            <div className="w-full p-3 pt-4 pb-4 bg-zinc-100 rounded-xl border-radius-card">
+            <div className="w-full p-3 lg:pt-4 lg:pb-4 bg-zinc-100 rounded-xl border-radius-card">
               <h2
                 className=" text-xl mb-0 text-con-bold text-zinc-700"
                 alt={`Cinema: ${cinema.name}`}

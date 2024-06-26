@@ -6,14 +6,20 @@ html {
   background-color: #27272a; /* Sets the background color to a dark blue-grey */
 }
 
-@media (min-width: 1024px) {
-  html {
-    overflow: hidden; /* Disables scrolling for screens wider than 1024px */
-  }
-}
 
 body{
   background-color: #27272a; 
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow-x: hidden; 
+  }
+  
+}
+
+.scroll{
+  overflow-y: scroll;
 }
 
 img {

@@ -5,8 +5,8 @@ import ShowCard from "./ShowCard";
 import useUserLocation from "./UserLocation";
 import citiesData from "../cities_coord.json";
 import { format } from "date-fns";
-import locandina_vert from "../img/locandina.png";
-import locandina_orizz from "../img/locandina.jpg";
+import locandina_vert from "../img/locandina.jpg";
+import locandina_orizz from "../img/locandina2.jpg";
 
 const ShowElements = () => {
   const currentDate = new Date();
@@ -15,7 +15,7 @@ const ShowElements = () => {
   const [searchCity, setSearchCity] = useState("");
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedDate, setSelectedDate] = useState(CurrentFormattedDate);
-  const [visibleCount, setVisibleCount] = useState(3);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   const selectedCoordinates = selectedCity
     ? {
@@ -28,7 +28,7 @@ const ShowElements = () => {
   const [selectedDistance, setSelectedDistance] = useState(maxDistance);
 
   const handleShowMore = () => {
-    setVisibleCount((prevCount) => prevCount + 2);
+    setVisibleCount((prevCount) => prevCount + 4);
   };
 
   const filteredCinemas = sortedCinemas
@@ -78,16 +78,15 @@ const ShowElements = () => {
         />
         <div className="hidden lg:block pt-10 pb-10 px-2">
           <div className="flex flex-col items-left justify-left bg-zinc-900">
-            <h1 className="text-zinc-100 font-bold text-3xl text-left mb-5">The Watchers - Loro ti guardano</h1>
+            <h1 className="text-zinc-100 font-bold text-3xl text-left mb-5">Bad Boys - Ride or die</h1>
           </div>
           <h1 className="text-zinc-100 font-bold text-2xl">Trama:</h1>
           <p className="text-zinc-100 font-normal">
-            Mina, una commessa, si ritrova intrappolata in una foresta irlandese maledetta, 
-            osservata da creature misteriose che prendono le forme di chi le guarda. 
-            Di notte, il bosco diventa un luogo di terrore, costringendo Mina e altri 
-            sopravvissuti a lottare per la sopravvivenza in un rifugio di cemento. 
-            Un thriller horror che esplora i temi del doppio e l'empatia nel cuore 
-            oscuro della natura.</p>
+          Mike e Marcus tornano in azione per scagionare un vecchio amico 
+          e sfidare una rete di corruzione che li porta dall'oscurità del 
+          crimine organizzato fino agli angoli più bui delle forze dell'ordine. 
+          Lealtà, sacrificio e adrenalina si mescolano in questo 
+          esplosivo capitolo della saga.</p>
         </div>
       </div>
     </header>
@@ -105,6 +104,7 @@ const ShowElements = () => {
         CurrentFormattedDate={CurrentFormattedDate}
       />
       <ShowCard
+        className="scroll"
         filteredCinemas={filteredCinemas}
         selectedCoordinates={selectedCoordinates}
         selectedDate={selectedDate}
@@ -112,7 +112,7 @@ const ShowElements = () => {
       {filteredCinemas.length > 0 && (
         <div className="bg-zinc-300 p-3 d-flex justify-content-center">
           <button
-            className="border-radius-class text-zinc-700 bg-zinc-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular"
+            className="border-radius-class text-zinc-700 bg-zinc-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular position:fixed lg:z-10"
             onClick={handleShowMore}
           >
             Mostra altri
