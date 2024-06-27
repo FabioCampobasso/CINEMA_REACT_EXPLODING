@@ -12,10 +12,9 @@ body{
 }
 
 @media (min-width: 1024px) {
-  body {
+  body{
     overflow-x: hidden; 
   }
-  
 }
 
 
@@ -148,12 +147,11 @@ footer {
 
 ::-webkit-scrollbar {
   background: transparent;
-  width: 0px;
-  height: 0px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: #d4d4d8; 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -168,9 +166,8 @@ footer {
 
 @media (min-width: 1024px) {
   ::-webkit-scrollbar-thumb {
-    background: #d4d4d8; 
-    width: 5px;
-    height: 10px;
+    background: #cecece; 
+    height: 2px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
@@ -178,7 +175,13 @@ footer {
   }
 }
 
+
 .sticky-element {
   position: sticky;
   top: 0; /* Distanza dall'alto del viewport quando l'elemento diventa 'sticky' */
+}
+
+.scroll{
+  overflow-y: auto;
+  height: 50%;
 }

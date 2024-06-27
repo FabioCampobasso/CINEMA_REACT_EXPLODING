@@ -35,20 +35,25 @@ const ShowElements = () => {
     .filter((cinema) => Object.keys(cinema.showtime).includes(selectedDate))
     .slice(0, visibleCount);
 
-  const handleCityChange = (event) => {
-    const cityName = event.target.value;
-    setSearchCity(cityName);
-
-    const city = citiesData.cities.find(
-      (c) => c.name.toLowerCase() === cityName.toLowerCase()
-    );
-
-    if (city) {
-      setSelectedCity(city);
-    } else {
-      setSelectedCity(null);
-    }
-  };
+    const handleCityChange = (event) => {
+      let cityName = event.target.value;
+          setSearchCity(cityName);
+    
+      cityName = cityName.trimEnd();
+    
+      // Trova la città corrispondente nel database, ignorando la differenza tra maiuscole e minuscole
+      const city = citiesData.cities.find(
+        (c) => c.name.toLowerCase() === cityName.toLowerCase()
+      );
+    
+      // Aggiorna lo stato della città selezionata
+      if (city) {
+        setSelectedCity(city);
+      } else {
+        setSelectedCity(null);
+      }
+    };
+    
 
   const handleDistanceChange = (e) => {
     setSelectedDistance(parseFloat(e.target.value));
@@ -61,7 +66,7 @@ const ShowElements = () => {
   return (
 <main className="d-flex flex-column">
   <div className="flex flex-col lg:flex-row">
-    <header className="w-full bg-zinc-900 flex justify-center items-center lg:items-start lg:p-10">
+    <header className="w-full bg-zinc-900 flex justify-center items-center lg:items-start lg:p-10 h-full lg:sticky top-0">
       <div className="w-full">
         <img
           src={locandina_orizz}
@@ -75,7 +80,7 @@ const ShowElements = () => {
           className="hidden lg:block w-full h-full shadow-lg mx-auto mt-4"
           style={{ objectFit: "cover" }}
         />
-         <h1 className="text-zinc-100 font-bold text-xl text-center mt-2 mb-3 lg:text-3xl lg:text-left lg:mb-5">Bad Boys - Ride or die</h1>
+         <h1 className="text-zinc-100 font-bold text-center text-xl mt-2 mb-3 lg:text-3xl lg:text-left lg:mb-5">Bad Boys - Ride or die</h1>
         <div className="hidden lg:block pt-10 pb-10 px-2">
           <div className="flex flex-col items-left justify-left bg-zinc-900">
     
@@ -107,23 +112,26 @@ const ShowElements = () => {
       CurrentFormattedDate={CurrentFormattedDate}
     />
   </div>
+     
       <ShowCard
-        className="scroll"
         filteredCinemas={filteredCinemas}
         selectedCoordinates={selectedCoordinates}
         selectedDate={selectedDate}
         location={location}
+        selectedCity={selectedCity}
+
       />
       {filteredCinemas.length > 0 && (
-        <div className="bg-zinc-300 p-3 d-flex justify-content-center">
+        <div className="bg-zinc-300 p-3 d-flex justify-content-center lg: mb-20">
           <button
-            className="border-radius-class text-zinc-700 bg-zinc-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular position:fixed lg:z-10"
+            className="border-radius-class text-zinc-700 bg-zinc-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular lg:position-button"
             onClick={handleShowMore}
           >
             Mostra altri
           </button>
         </div>
       )}
+
       <footer className="bg-zinc-800 p-4 text-white">
         Termini e condizioni
       </footer>

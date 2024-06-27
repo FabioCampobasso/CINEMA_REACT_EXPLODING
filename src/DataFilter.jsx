@@ -8,8 +8,8 @@ function DateFilter({ selectedDate, handleDateChange }) {
   const today = startOfDay(new Date());
 
   useEffect(() => {
-    const newDates = Array.from({ length: 201 }, (_, index) =>
-      format(addDays(new Date(selectedDate), index - 101), "yyyy-MM-dd")
+    const newDates = Array.from({ length: 81 }, (_, index) =>
+      format(addDays(new Date(selectedDate), index - 41), "yyyy-MM-dd")
     );
     setDates(newDates);
   }, []);
@@ -43,13 +43,10 @@ function DateFilter({ selectedDate, handleDateChange }) {
     justifyContent: "center",
     overflowX: "scroll",
     whiteSpace: "nowrap",
-
-    // scrollbarWidth: "none",
-    // msOverflowStyle: "none",
   };
 
   return (
-    <div ref={containerRef} style={scrollableStyle} className=" bg-slate-100 ">
+    <div ref={containerRef} style={scrollableStyle} className=" bg-slate-100">
       {dates.map((date) => (
         <button
           key={date}
