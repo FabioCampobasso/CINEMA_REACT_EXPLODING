@@ -17,15 +17,15 @@ const ShowCard = ({
   return (
     <main className="bg-zinc-300">
       {isEmpty(filteredCinemas) ? (
-        <div className="d-flex flex-column align-items-center p-6 m-7 lg:h-screen">
+        <div className="d-flex flex-column align-items-center p-6 m-8 lg:h-screen">
           {hasLocationOrCity ? (
             <>
-              <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40">
+              <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40 ">
                 NON HO TROVATO CINEMA
               </h2>
               <img
                 src={not_found}
-                className="mb-1 "
+                className="mb-1 lg:scale-125 lg:mt-10"
                 alt="Nessun cinema trovato"
               />
             </>
@@ -34,7 +34,7 @@ const ShowCard = ({
               <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40">
                 CERCA IL CINEMA PIÙ VICINO A TE
               </h2>
-              <img src={cerca} className="mb-1 " alt="Cerca" />
+              <img src={cerca} className="mb-1 lg:scale-125 lg:mt-10" alt="Cerca" />
             </>
           )}
         </div>
