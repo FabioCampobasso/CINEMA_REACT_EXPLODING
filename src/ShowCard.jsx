@@ -72,7 +72,9 @@ const ShowCard = ({
                         "_blank"
                       );
                     }}
-                  ></button>
+                  >
+                    {cinema.showtime[selectedDate][key].ora}
+                  </button>
                 ))}
               </div>
             </div>
