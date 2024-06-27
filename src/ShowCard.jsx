@@ -2,7 +2,12 @@ import React from "react";
 import not_found from "../img/not_found.png";
 import cerca from "../img/cerca.png";
 
-const ShowCard = ({ filteredCinemas, selectedDate, location, selectedCity }) => {
+const ShowCard = ({
+  filteredCinemas,
+  selectedDate,
+  location,
+  selectedCity,
+}) => {
   const isEmpty = (arr) => {
     return arr.length === 0;
   };
@@ -11,33 +16,29 @@ const ShowCard = ({ filteredCinemas, selectedDate, location, selectedCity }) => 
 
   return (
     <main className="bg-zinc-300">
-    {isEmpty(filteredCinemas) ? (
-      <div className="d-flex flex-column align-items-center p-6 m-16 lg:h-screen">
-        {hasLocationOrCity ? (
-          <>
-            <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40">
-              NON HO TROVATO CINEMA
-            </h2>
-            <img
-              src={not_found}
-              className="mb-1 "
-              alt="Nessun cinema trovato"
-            />
-          </>
-        ) : (
-          <>
-                      <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40">
-              CERCA IL CINEMA VICINO A TE
-            </h2>
-            <img
-              src={cerca}
-              className="mb-1"
-              alt="Cerca"
-            />
-          </>
-        )}
-      </div>
-    ) : null}
+      {isEmpty(filteredCinemas) ? (
+        <div className="d-flex flex-column align-items-center p-6 m-16 lg:h-screen">
+          {hasLocationOrCity ? (
+            <>
+              <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40">
+                NON HO TROVATO CINEMA
+              </h2>
+              <img
+                src={not_found}
+                className="mb-1 "
+                alt="Nessun cinema trovato"
+              />
+            </>
+          ) : (
+            <>
+              <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40">
+                CERCA IL CINEMA VICINO A TE
+              </h2>
+              <img src={cerca} className="mb-1" alt="Cerca" />
+            </>
+          )}
+        </div>
+      ) : null}
       {filteredCinemas.map((cinema, index) => (
         <div key={index} className="m-3">
           <div className="flex ">
@@ -66,19 +67,19 @@ const ShowCard = ({ filteredCinemas, selectedDate, location, selectedCity }) => 
                     className="bg-zinc-600 text-bold text-zinc-100 p-1 px-2 mt-2 mr-2 text-xs rounded-pill bg-hover"
                     key={cinema.showtime[selectedDate][key].ora}
                     onClick={() => {
-                      window.location.href = cinema.showtime[selectedDate][key].url;
-                      window.open(cinema.showtime[selectedDate][key].url, '_blank');
+                      window.open(
+                        cinema.showtime[selectedDate][key].url,
+                        "_blank"
+                      );
                     }}
-                  >
-                    {cinema.showtime[selectedDate][key].ora}
-                  </button>
+                  ></button>
                 ))}
               </div>
             </div>
           </div>
         </div>
       ))}
-      </main>
+    </main>
   );
 };
 

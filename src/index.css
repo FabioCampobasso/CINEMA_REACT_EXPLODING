@@ -6,17 +6,15 @@ html {
   background-color: #27272a; /* Sets the background color to a dark blue-grey */
 }
 
-
-body{
-  background-color: #27272a; 
+body {
+  background-color: #27272a;
 }
 
 @media (min-width: 1024px) {
-  body{
-    overflow-x: hidden; 
+  body {
+    overflow-x: hidden;
   }
 }
-
 
 .border-radius-card {
   border-radius: 1.5rem;
@@ -126,9 +124,8 @@ input {
   align-items: center; /* Vertically center the content inside the button */
 }
 
-.width_input{
- width: 80%;
-  
+.width_input {
+  width: 80%;
 }
 
 footer {
@@ -151,37 +148,36 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-  background: #d4d4d8; 
+  background: #d4d4d8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: transparent; 
+  background: transparent;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: transparent; 
-   border-radius: 50px;
+  background: transparent;
+  border-radius: 50px;
 }
 
 @media (min-width: 1024px) {
   ::-webkit-scrollbar-thumb {
-    background: #cecece; 
+    background: #cecece;
     height: 2px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
   }
 }
-
 
 .sticky-element {
   position: sticky;
   top: 0; /* Distanza dall'alto del viewport quando l'elemento diventa 'sticky' */
 }
 
-.scroll{
+.scroll {
   overflow-y: auto;
   height: 50%;
 }
