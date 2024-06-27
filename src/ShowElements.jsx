@@ -122,7 +122,7 @@ const ShowElements = () => {
             selectedCity={selectedCity}
           />
           {filteredCinemas.length > 0 && (
-            <div className="bg-zinc-300 p-3 d-flex justify-content-center lg: mb-20">
+            <div className="bg-zinc-300 p-3 d-flex justify-content-center lg:mb-20">
               <button
                 className="border-radius-class text-zinc-700 bg-zinc-100 col-span-3 text-md m-2 p-1 px-3 text-con-regular lg:position-button"
                 onClick={handleShowMore}

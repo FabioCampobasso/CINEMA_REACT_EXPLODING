@@ -32,7 +32,7 @@ const ShowCard = ({
           ) : (
             <>
               <h2 className="text-con-bold text-rose-600 text-center text-xl lg:text-3xl text-nowrap lg:mt-40">
-                CERCA IL CINEMA VICINO A TE
+                CERCA IL CINEMA PIÙ VICINO A TE
               </h2>
               <img src={cerca} className="mb-1" alt="Cerca" />
             </>
