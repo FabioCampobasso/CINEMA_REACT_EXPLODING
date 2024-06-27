@@ -6,6 +6,7 @@ html {
   background-color: #27272a; /* Sets the background color to a dark blue-grey */
 }
 
+
 body {
   background-color: #27272a;
 }
@@ -144,6 +145,7 @@ footer {
 
 ::-webkit-scrollbar {
   background: transparent;
+  width: 5px;
   height: 5px;
 }
 
@@ -165,6 +167,7 @@ footer {
   ::-webkit-scrollbar-thumb {
     background: #cecece;
     height: 2px;
+    width: 2px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
