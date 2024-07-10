@@ -80,17 +80,16 @@ const ShowElements = () => {
               style={{ objectFit: "cover" }}
             />
             <h1 className="text-zinc-100 font-bold text-center text-xl mt-2 mb-3 lg:text-3xl lg:text-left lg:mb-5">
-              Bad Boys - Ride or die
+            Horizon: An American Saga
             </h1>
             <div className="hidden lg:block pt-10 pb-10 px-2">
               <div className="flex flex-col items-left justify-left bg-zinc-900"></div>
               <h1 className="text-zinc-100 font-bold text-2xl">Trama:</h1>
               <p className="text-zinc-100 font-normal">
-                Mike e Marcus tornano in azione per scagionare un vecchio amico
-                e sfidare una rete di corruzione che li porta dall'oscurità del
-                crimine organizzato fino agli angoli più bui delle forze
-                dell'ordine. Lealtà, sacrificio e adrenalina si mescolano in
-                questo esplosivo capitolo della saga.
+              Scopri l'epica saga di 'Horizon: An American Saga', 
+              diretta e interpretata da Kevin Costner. Attraverso due capitoli,
+               il film esplora la Guerra Civile Americana e la conquista del Vecchio West, 
+               offrendo un'avventura emozionante e una cronaca sfaccettata di un'America in evoluzione.
               </p>
             </div>
           </div>
